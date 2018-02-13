@@ -1,0 +1,391 @@
+[{
+    "name": "",
+    "firstvalue": "",
+    "secondvalue": "",
+    "id": 0
+}, {
+    "name": "",
+    "firstvalue": "Text",
+    "secondvalue": "Font Size in Pixels",
+    "id": 1
+}, {
+    "name": "title",
+    "firstvalue": "Snake Oil Superfoods?",
+    "secondvalue": "42",
+    "id": 2
+}, {
+    "name": "primarysubtitle",
+    "firstvalue": "Solid scientific evidence for extra health benefits of certain foods",
+    "secondvalue": "21",
+    "id": 3
+}, {
+    "name": "secondarysubtitle",
+    "firstvalue": "showing tangible health effects",
+    "secondvalue": "16",
+    "id": 4
+}, {
+    "name": "processingnotification",
+    "firstvalue": "Processing, please wait",
+    "secondvalue": "",
+    "id": 5
+}, {
+    "name": "",
+    "firstvalue": "",
+    "secondvalue": "",
+    "id": 6
+}, {
+    "name": "",
+    "firstvalue": "Type",
+    "secondvalue": "Hex Colour",
+    "id": 7
+}, {
+    "name": "entitycolourset",
+    "firstvalue": "Pastel",
+    "secondvalue": "",
+    "id": 8
+}, {
+    "name": "",
+    "firstvalue": "",
+    "secondvalue": "",
+    "id": 9
+}, {
+    "name": "typecolour",
+    "firstvalue": "extract",
+    "secondvalue": "FF0000",
+    "id": 10
+}, {
+    "name": "typecolour",
+    "firstvalue": "fruit",
+    "secondvalue": "00FF00",
+    "id": 11
+}, {
+    "name": "typecolour",
+    "firstvalue": "grain",
+    "secondvalue": "0000FF",
+    "id": 12
+}, {
+    "name": "typecolour",
+    "firstvalue": "herb \/ spice",
+    "secondvalue": "CCCCCC",
+    "id": 13
+}, {
+    "name": "typecolour",
+    "firstvalue": "nut",
+    "secondvalue": "FF4444",
+    "id": 14
+}, {
+    "name": "",
+    "firstvalue": "",
+    "secondvalue": "",
+    "id": 15
+}, {
+    "name": "",
+    "firstvalue": "Minimum Value",
+    "secondvalue": "Maximum Value",
+    "id": 16
+}, {
+    "name": "scale",
+    "firstvalue": "0",
+    "secondvalue": "6",
+    "id": 17
+}, {
+    "name": "",
+    "firstvalue": "",
+    "secondvalue": "",
+    "id": 18
+}, {
+    "name": "",
+    "firstvalue": "Value",
+    "secondvalue": "Label",
+    "id": 19
+}, {
+    "name": "label",
+    "firstvalue": "6",
+    "secondvalue": "STRONG",
+    "id": 20
+}, {
+    "name": "label",
+    "firstvalue": "5",
+    "secondvalue": "GOOD",
+    "id": 21
+}, {
+    "name": "label",
+    "firstvalue": "4",
+    "secondvalue": "PROMISING",
+    "id": 22
+}, {
+    "name": "label",
+    "firstvalue": "3",
+    "secondvalue": "INCONCLUSIVE",
+    "id": 23
+}, {
+    "name": "label",
+    "firstvalue": "2",
+    "secondvalue": "SOME",
+    "id": 24
+}, {
+    "name": "label",
+    "firstvalue": "1",
+    "secondvalue": "SLIGHT",
+    "id": 25
+}, {
+    "name": "label",
+    "firstvalue": "0",
+    "secondvalue": "NO EVIDENCE",
+    "id": 26
+}, {
+    "name": "",
+    "firstvalue": "",
+    "secondvalue": "",
+    "id": 27
+}, {
+    "name": "",
+    "firstvalue": "Position",
+    "secondvalue": "Label",
+    "id": 28
+}, {
+    "name": "line",
+    "firstvalue": "3.7",
+    "secondvalue": "WORTH TAKING THRESHOLD,",
+    "id": 29
+}, {
+    "name": "line",
+    "firstvalue": "2",
+    "secondvalue": "WORTH INVESTIGATING THRESHOLD, ",
+    "id": 30
+}, {
+    "name": "",
+    "firstvalue": "",
+    "secondvalue": "",
+    "id": 31
+}, {
+    "name": "",
+    "firstvalue": "Minimum Bubble Size",
+    "secondvalue": "Maximum Bubble Size",
+    "id": 32
+}, {
+    "name": "bubblesizes",
+    "firstvalue": "10",
+    "secondvalue": "90",
+    "id": 33
+}, {
+    "name": "",
+    "firstvalue": "",
+    "secondvalue": "",
+    "id": 34
+}, {
+    "name": "",
+    "firstvalue": "Gradient Colour Set",
+    "secondvalue": "Gradient Direction",
+    "id": 35
+}, {
+    "name": "gradientcolourset",
+    "firstvalue": "yellow > orange > pink",
+    "secondvalue": "Bottom to Top",
+    "id": 36
+}, {
+    "name": "",
+    "firstvalue": "",
+    "secondvalue": "",
+    "id": 37
+}, {
+    "name": "",
+    "firstvalue": "Position",
+    "secondvalue": "Hex Colour",
+    "id": 38
+}, {
+    "name": "gradientcolour",
+    "firstvalue": "6",
+    "secondvalue": "433f92",
+    "id": 39
+}, {
+    "name": "gradientcolour",
+    "firstvalue": "3",
+    "secondvalue": "47b25b",
+    "id": 40
+}, {
+    "name": "gradientcolour",
+    "firstvalue": "0",
+    "secondvalue": "fff9d1",
+    "id": 41
+}, {
+    "name": "",
+    "firstvalue": "",
+    "secondvalue": "",
+    "id": 42
+}, {
+    "name": "",
+    "firstvalue": "Show Highlights?",
+    "secondvalue": "Hex Colour",
+    "id": 43
+}, {
+    "name": "onetowatchcolour",
+    "firstvalue": "Only when colouring by Primary Value",
+    "secondvalue": "8ab5ff",
+    "id": 44
+}, {
+    "name": "",
+    "firstvalue": "",
+    "secondvalue": "",
+    "id": 45
+}, {
+    "name": "",
+    "firstvalue": "Enable this functionality in the viz?",
+    "secondvalue": "",
+    "id": 46
+}, {
+    "name": "func_colour_by_type",
+    "firstvalue": "Both (default to Primary Value)",
+    "secondvalue": "",
+    "id": 47
+}, {
+    "name": "func_notes",
+    "firstvalue": "Yes",
+    "secondvalue": "",
+    "id": 48
+}, {
+    "name": "",
+    "firstvalue": "",
+    "secondvalue": "",
+    "id": 49
+}, {
+    "name": "",
+    "firstvalue": "",
+    "secondvalue": "",
+    "id": 50
+}, {
+    "name": "func_filter_metric_001",
+    "firstvalue": "Yes",
+    "secondvalue": "",
+    "id": 51
+}, {
+    "name": "func_filter_metric_002",
+    "firstvalue": "No",
+    "secondvalue": "",
+    "id": 52
+}, {
+    "name": "func_filter_metric_003",
+    "firstvalue": "Yes",
+    "secondvalue": "",
+    "id": 53
+}, {
+    "name": "func_filter_metric_004",
+    "firstvalue": "No",
+    "secondvalue": "",
+    "id": 54
+}, {
+    "name": "",
+    "firstvalue": "",
+    "secondvalue": "",
+    "id": 55
+}, {
+    "name": "",
+    "firstvalue": "",
+    "secondvalue": "",
+    "id": 56
+}, {
+    "name": "func_allow_reordering",
+    "firstvalue": "Yes",
+    "secondvalue": "",
+    "id": 57
+}, {
+    "name": "func_xaxis_metric_001",
+    "firstvalue": "Yes",
+    "secondvalue": "",
+    "id": 58
+}, {
+    "name": "func_xaxis_metric_002",
+    "firstvalue": "No",
+    "secondvalue": "",
+    "id": 59
+}, {
+    "name": "func_xaxis_metric_003",
+    "firstvalue": "Yes",
+    "secondvalue": "",
+    "id": 60
+}, {
+    "name": "func_xaxis_metric_004",
+    "firstvalue": "No",
+    "secondvalue": "",
+    "id": 61
+}, {
+    "name": "",
+    "firstvalue": "",
+    "secondvalue": "",
+    "id": 62
+}, {
+    "name": "",
+    "firstvalue": "Text",
+    "secondvalue": "",
+    "id": 63
+}, {
+    "name": "shownoteslabel",
+    "firstvalue": "Click here to read our notes",
+    "secondvalue": "",
+    "id": 64
+}, {
+    "name": "opensourcelabel",
+    "firstvalue": "Click here to see lead study",
+    "secondvalue": "",
+    "id": 65
+}, {
+    "name": "",
+    "firstvalue": "",
+    "secondvalue": "",
+    "id": 66
+}, {
+    "name": "",
+    "firstvalue": "",
+    "secondvalue": "",
+    "id": 67
+}, {
+    "name": "",
+    "firstvalue": "Title",
+    "secondvalue": "Content",
+    "id": 68
+}, {
+    "name": "disclaimer",
+    "firstvalue": "",
+    "secondvalue": "",
+    "id": 69
+}, {
+    "name": "",
+    "firstvalue": "",
+    "secondvalue": "",
+    "id": 70
+}, {
+    "name": "",
+    "firstvalue": "HTML",
+    "secondvalue": "",
+    "id": 71
+}, {
+    "name": "credits",
+    "firstvalue": "Version 1.0 \/\/ Sep 2013<br\/>design & concept: David McCandless<br\/>code: <a href=\"http:\/\/www.acatacalledfrank.com\" target=\"_blank\">Tom Evans<\/a>, David McCandless <br\/><br\/>",
+    "secondvalue": "",
+    "id": 72
+}, {
+    "name": "source",
+    "firstvalue": "Sources: PubMed, Cochrane.org, <a href=\"http:\/\/www.examine.com\">Examine.com<\/a>\nRCTs and population studies. Metastudies & large trials used where possible. Research: Miriam Quick, Kesta Desmond",
+    "secondvalue": "",
+    "id": 73
+}, {
+    "name": "sendfeedbacklink",
+    "firstvalue": "https:\/\/docs.google.com\/forms\/d\/1A7la8fR8tqEWp8QJ5ySpfN7tLKXGfl-CjzFYI_JnoHg\/viewform",
+    "secondvalue": "",
+    "id": 74
+}, {
+    "name": "logourl",
+    "firstvalue": "",
+    "secondvalue": "",
+    "id": 75
+}, {
+    "name": "vizsweetlink",
+    "firstvalue": "http:\/\/www.informationisbeautiful.net\/vizsweet\/",
+    "secondvalue": "",
+    "id": 76
+}, {
+    "name": "seethedatalink",
+    "firstvalue": "https:\/\/docs.google.com\/spreadsheet\/ccc?key=0Aqe2P9sYhZ2ndEJVZkdDV1lrVVRtaHppTDlhOTFEUkE#gid=2",
+    "secondvalue": "",
+    "id": 77
+}]

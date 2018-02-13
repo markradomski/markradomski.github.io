@@ -1,0 +1,745 @@
+[
+  {
+    "title": "...",
+    "name": "",
+    "firstvalue": "",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Header",
+    "name": "",
+    "firstvalue": "Text",
+    "secondvalue": "Font Size in Pixels",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "App Title",
+    "name": "title",
+    "firstvalue": "Smashed Avocado on Toast Property Price Index",
+    "secondvalue": 42,
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "App Primary Subtitle",
+    "name": "primarysubtitle",
+    "firstvalue": "Australian Politician property ownership",
+    "secondvalue": 21,
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "App Secondary Subtitle",
+    "name": "secondarysubtitle",
+    "firstvalue":
+      "(based on median house price of $656800 and eating $22 smashed avo every.single.day)",
+    "secondvalue": 16,
+    "Notes": "15 max",
+    "": ""
+  },
+  {
+    "title": "Mobile/Tablet Processing Notification",
+    "name": "processingnotification",
+    "firstvalue": "Processing, please wait",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "",
+    "name": "",
+    "firstvalue": "",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Entity Type Colours",
+    "name": "",
+    "firstvalue": "Type",
+    "secondvalue": "Hex Colour",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Pre-made Entity Type Colour Set",
+    "name": "entitycolourset",
+    "firstvalue": "Fresh",
+    "secondvalue": "",
+    "Notes": "This will override any custom entity colours",
+    "": ""
+  },
+  {
+    "title": "OR",
+    "name": "",
+    "firstvalue": "",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Type / Colour",
+    "name": "typecolour",
+    "firstvalue": "Liberal",
+    "secondvalue": "1C4F9C",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Type / Colour",
+    "name": "typecolour",
+    "firstvalue": "National",
+    "secondvalue": "176F4D",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Type / Colour",
+    "name": "typecolour",
+    "firstvalue": "Labor",
+    "secondvalue": "DE2C34",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Type / Colour",
+    "name": "typecolour",
+    "firstvalue": "Greens",
+    "secondvalue": "39b54a",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Type / Colour",
+    "name": "typecolour",
+    "firstvalue": "One Nation",
+    "secondvalue": "F8F16F",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Type / Colour",
+    "name": "typecolour",
+    "firstvalue": "Nick Xenophon Team",
+    "secondvalue": "FF7400",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Type / Colour",
+    "name": "typecolour",
+    "firstvalue": "Katter's Australian Party",
+    "secondvalue": "b50204",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Type / Colour",
+    "name": "typecolour",
+    "firstvalue": "Jacqui Lambie Network",
+    "secondvalue": "0D0D0D",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Type / Colour",
+    "name": "typecolour",
+    "firstvalue": "Derryn Hinch's Justice Party",
+    "secondvalue": "03315c",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Type / Colour",
+    "name": "typecolour",
+    "firstvalue": "Liberal Democratic Party",
+    "secondvalue": "2a55a2",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Type / Colour",
+    "name": "typecolour",
+    "firstvalue": "Australian Conservatives",
+    "secondvalue": "55acee",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "",
+    "name": "",
+    "firstvalue": "",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "",
+    "name": "",
+    "firstvalue": "",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Y Axis Scale",
+    "name": "",
+    "firstvalue": "Minimum Value",
+    "secondvalue": "Maximum Value",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Maximum and minimum values",
+    "name": "scale",
+    "firstvalue": 0,
+    "secondvalue": 32,
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "",
+    "name": "",
+    "firstvalue": "",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Y Axis Labels",
+    "name": "",
+    "firstvalue": "Value",
+    "secondvalue": "Label",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Label",
+    "name": "label",
+    "firstvalue": 30,
+    "secondvalue": 30,
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Label",
+    "name": "label",
+    "firstvalue": 25,
+    "secondvalue": 25,
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Label",
+    "name": "label",
+    "firstvalue": 20,
+    "secondvalue": 20,
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Label",
+    "name": "label",
+    "firstvalue": 15,
+    "secondvalue": 15,
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Label",
+    "name": "label",
+    "firstvalue": 10,
+    "secondvalue": 10,
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Label",
+    "name": "label",
+    "firstvalue": 5,
+    "secondvalue": 5,
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Label",
+    "name": "label",
+    "firstvalue": 4,
+    "secondvalue": 4,
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Label",
+    "name": "label",
+    "firstvalue": 3,
+    "secondvalue": 3,
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Label",
+    "name": "label",
+    "firstvalue": 2,
+    "secondvalue": 2,
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Label",
+    "name": "label",
+    "firstvalue": 1,
+    "secondvalue": 1,
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Label",
+    "name": "label",
+    "firstvalue": 0,
+    "secondvalue": 0,
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "",
+    "name": "",
+    "firstvalue": "",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "",
+    "name": "",
+    "firstvalue": "",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Dividing Lines",
+    "name": "",
+    "firstvalue": "Position",
+    "secondvalue": "Label",
+    "Notes":
+      "A line needs a Position and a Label or it will not appear in the viz.",
+    "": ""
+  },
+  {
+    "title": "Dividing Line",
+    "name": "line",
+    "firstvalue": 2.4,
+    "secondvalue": "Politician average",
+    "Notes":
+      "Set the upper and lower text in the Label field, separated by a comma.",
+    "": ""
+  },
+  {
+    "title": "Dividing Line",
+    "name": "line",
+    "firstvalue": "",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Dividing Line",
+    "name": "line",
+    "firstvalue": "",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Dividing Line",
+    "name": "line",
+    "firstvalue": "",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "",
+    "name": "",
+    "firstvalue": "",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Bubbles",
+    "name": "",
+    "firstvalue": "Minimum Bubble Size",
+    "secondvalue": "Maximum Bubble Size",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Max and Min Bubbles Sizes",
+    "name": "bubblesizes",
+    "firstvalue": 5,
+    "secondvalue": 100,
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "",
+    "name": "",
+    "firstvalue": "",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Bubble Gradient",
+    "name": "",
+    "firstvalue": "Gradient Colour Set",
+    "secondvalue": "Gradient Direction",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Pre-made Gradient Colour Set",
+    "name": "gradientcolourset",
+    "firstvalue": "yellow > orange > pink",
+    "secondvalue": "Bottom to Top",
+    "Notes":
+      "Choosing a colour set will override any custom gradient unless set to \"None",
+    "": ""
+  },
+  {
+    "title": "OR",
+    "name": "",
+    "firstvalue": "",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Bubble Gradient Colours",
+    "name": "",
+    "firstvalue": "Position",
+    "secondvalue": "Hex Colour",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Gradient Colour",
+    "name": "gradientcolour",
+    "firstvalue": 17,
+    "secondvalue": "433f92",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Gradient Colour",
+    "name": "gradientcolour",
+    "firstvalue": 8,
+    "secondvalue": "47b25b",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Gradient Colour",
+    "name": "gradientcolour",
+    "firstvalue": 0,
+    "secondvalue": "fff9d1",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "",
+    "name": "",
+    "firstvalue": "",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Highlights",
+    "name": "",
+    "firstvalue": "Show Highlights?",
+    "secondvalue": "Hex Colour",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Hex colour for \"highlight\" bubbles",
+    "name": "onetowatchcolour",
+    "firstvalue": "Only when colouring by Primary Value",
+    "secondvalue": "8ab5ff",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "",
+    "name": "",
+    "firstvalue": "",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Functionality",
+    "name": "",
+    "firstvalue": "Enable this functionality in the viz?",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Allow user to change bubble colours",
+    "name": "func_colour_by_type",
+    "firstvalue": "Colour by Type only",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Let users view notes for bubbles",
+    "name": "func_notes",
+    "firstvalue": "Yes",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "",
+    "name": "",
+    "firstvalue": "",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Bubble Size",
+    "name": "",
+    "firstvalue": "",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Size Bubbles by Metric 1",
+    "name": "func_filter_metric_001",
+    "firstvalue": "Yes",
+    "secondvalue": "",
+    "Notes": "Can the user choose what the bubble size represents?",
+    "": ""
+  },
+  {
+    "title": "Size Bubbles by Metric 2",
+    "name": "func_filter_metric_002",
+    "firstvalue": "Yes",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Size Bubbles by Metric 3",
+    "name": "func_filter_metric_003",
+    "firstvalue": "No",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Size Bubbles by Metric 4",
+    "name": "func_filter_metric_004",
+    "firstvalue": "No",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "",
+    "name": "",
+    "firstvalue": "",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "X-Axis Sorting",
+    "name": "",
+    "firstvalue": "",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Can bubbles be reordered along the X axis?",
+    "name": "func_allow_reordering",
+    "firstvalue": "No",
+    "secondvalue": "",
+    "Notes": "Setting this to Off will hide all X-axis sorting controls",
+    "": ""
+  },
+  {
+    "title": "Allow Sort Bubbles by Metric 1",
+    "name": "func_xaxis_metric_001",
+    "firstvalue": "No",
+    "secondvalue": "",
+    "Notes": "Can the user choose to sort bubbles along the x-axis?",
+    "": ""
+  },
+  {
+    "title": "Allow Sort Bubbles by Metric 2",
+    "name": "func_xaxis_metric_002",
+    "firstvalue": "No",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Allow Sort Bubbles by Metric 3",
+    "name": "func_xaxis_metric_003",
+    "firstvalue": "No",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Allow Sort Bubbles by Metric 4",
+    "name": "func_xaxis_metric_004",
+    "firstvalue": "No",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "",
+    "name": "",
+    "firstvalue": "",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Labels",
+    "name": "",
+    "firstvalue": "Text",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Bubble \"Click to see notes\" text",
+    "name": "shownoteslabel",
+    "firstvalue": "Click here to read our notes",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Bubble \"Click to open source\" text",
+    "name": "opensourcelabel",
+    "firstvalue": "Click here to see lead study",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "",
+    "name": "",
+    "firstvalue": "",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "",
+    "name": "",
+    "firstvalue": "",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Disclaimer",
+    "name": "",
+    "firstvalue": "Title",
+    "secondvalue": "Content",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Disclaimer Text",
+    "name": "disclaimer",
+    "firstvalue": "",
+    "secondvalue": "",
+    "Notes":
+      "If the Disclaimer Copy field is empty then the disclaimer will not appear.",
+    "": ""
+  },
+  {
+    "title": "",
+    "name": "",
+    "firstvalue": "",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Footer",
+    "name": "",
+    "firstvalue": "HTML",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Credits Text",
+    "name": "credits",
+    "firstvalue":
+      "Version 1.0 // July 2017<br/>design & concept: David McCandless<br/>code & research: <a href=\"mailto:radomski.mark@gmail.com?Subject=Data%20viz\" target=\"_top\">Mark Radomski</a><br/><br>Powered by <a href=\"http://www.vizsweet.com\">VIZSweet</a><br/>",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Source Text",
+    "name": "source",
+    "firstvalue":
+      "Sources: <a href=\"http://www.abc.net.au/news/2017-04-20/australian-politician-property-ownership-details/8453782\" target=\"_blank\">ABC News</a> , <a href=\"http://www.theaustralian.com.au/life/weekend-australian-magazine/moralisers-we-need-you/news-story/6bdb24f77572be68330bd306c14ee8a3#itm=taus%7Cnews%7Caus_authors_index%7C1%7Cauthors_storyBlock_headline%7CMoralisers%2C_we_need_you!%7Cindex%7Cauthor&itmt=1476580893995\" target=\"_blank\">KPMG partner Bernard Salt</a>",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Send Feedback",
+    "name": "sendfeedbacklink",
+    "firstvalue": "",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Client Logo URL",
+    "name": "logourl",
+    "firstvalue": "",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "VizSweet Logo URL",
+    "name": "vizsweetlink",
+    "firstvalue": "http://www.informationisbeautiful.net/vizsweet/",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "See the Data link",
+    "name": "seethedatalink",
+    "firstvalue": "",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  }
+]

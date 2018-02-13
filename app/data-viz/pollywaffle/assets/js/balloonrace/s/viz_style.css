@@ -1,0 +1,583 @@
+/*  HTML  */
+/*
+@font-face
+{
+
+	font-family: "Dosis";
+	src: local('☺'), url('../user-editable/Dosis-Medium.ttf');
+}
+*/
+body
+{
+	/*font-family: "Dosis";*/
+}
+
+/*  HTML CONTENT  */
+
+a:link{ color: #333 }
+a:visited{ color: #333 }
+a:hover{ color: #000 }
+a:active{ color: #333 }
+
+
+#balloon-race-visualisation-container
+{
+	position: relative;
+	margin: 0 auto 0 auto;
+
+}
+
+canvas {
+  outline: none;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0); /* mobile webkit */
+	pointer-events: none;
+	/*z-index: 50;*/
+	position: absolute;
+}
+
+.dividing-line
+{
+	float: left;
+	height: 1px;
+	background: #AAA;
+	width: 100%;
+}
+
+
+/*  HEADER  */
+
+#viz-header
+{
+	position: relative;
+	z-index: 20;
+	width: 100%;
+	background-color: white;
+	margin: 0 -100px 0 -100px;
+	padding: 0 100px 0 100px;
+	border-bottom: 1px solid #FFF;
+	overflow: hidden;
+}
+	#viz-header-inner
+	{
+		border-bottom: 1px solid #DDD;
+		background-color: white;
+		overflow: hidden;
+	}
+
+
+	.header-buffer
+	{
+		padding: 20px 0 0 0;
+		width: 100px;
+		height: 100%;
+		background-color: white;
+		display: block;
+	}
+	#buffer-left
+	{
+		float: left;
+		margin-left: -100px;
+	}
+	#buffer-right
+	{
+		float: right;
+		margin-right: -100px;
+	}
+
+	#header-title-container
+	{
+		padding: 20px 0 0 0;
+		position: relative;
+		float: left;
+		width: auto;
+	}
+
+	#main-title
+	{
+		font-size: 30px;
+		margin: 0 0 4px 0;
+	}
+	#primary-sub-title
+	{
+		font-size: 14px;
+		margin: 0 0 4px 0;
+	}
+	#secondary-sub-title
+	{
+		margin: 0 0 10px 0;
+		font-size: 12px;
+		color: #444;
+	}
+
+	/*  KEY  */
+
+	#viz-key
+	{
+		position: relative;
+		float: right;
+		width: auto;
+		padding: 22px 0 0 0;
+		text-align: center;
+		opacity: 0;
+		display: block;
+	}
+		#one-to-watch-circle
+		{
+			width: 25px;
+			height: 25px;
+			margin: auto;
+			border-radius: 12.5px;
+			background-color: #FFF;
+		}
+		#one-to-watch-key-label
+		{
+			margin: 5px 0 0 0;
+			font-size: 12px;
+			color: #444;
+		}
+
+	/*  UI  */
+
+	#header-ui
+	{
+		float: left;
+		font-size: 11px;
+		opacity: 0;
+		width: 100%;
+		overflow: hidden;
+	}
+
+	.header-ui-container
+	{
+		float: right;
+		overflow: hidden;
+	}
+
+	#header-filter-ui
+	{
+		display:inline-block;
+		width: auto;
+		margin: auto;
+	}
+		.header-filter-ui-label
+		{
+			float: left;
+			height: 20px;
+			margin: 0 5px 0 10px;
+			display: table;
+		}
+		.header-filter-ui-label p
+		{
+			display: table-cell;
+			vertical-align: middle;
+			text-align: center;
+			color: #666;
+		}
+
+		.header-filter-ui-button
+		{
+			display:inline-block;
+			float: left;
+			margin: 0 0 5px 4px;
+			height: 20px;
+			background-color: white;
+			border: 1px solid grey;
+			border-radius: 7px;
+			display: none;
+			cursor:pointer;
+		}
+			.header-filter-ui-button p
+			{
+				display: table-cell;
+				vertical-align: middle;
+				text-align: center;
+				padding: 0 5px 0 5px;
+			}
+			.header-filter-ui-button img
+			{
+				margin: 0 5px 0 0;
+			}
+
+		#header-scale-label
+		{
+			display: table;
+			float: left;
+			cursor: auto;
+			letter-spacing: 1px;
+			font-size: 14px;
+			margin-left: 0px;
+			background-color: grey;
+			color: white;
+		}
+		#bubble-size-label
+		{
+			/*font-weight: 550;*/
+			display: block;
+			font-style: italic;
+		}
+		#bubble-colour-label
+		{
+			/*font-weight: bold;*/
+			font-style: italic;
+		}
+		#ordering-label
+		{
+			font-style: italic;
+		}
+
+		#filter-show-button
+		{
+			float: right;
+			display: table;
+			width: 100px;
+			margin: 0 0 0 20px;
+		}
+
+
+/*  VIZ CONTENT  */
+
+#mousetrap
+{
+	/*
+	position: absolute;
+	color: white;
+	z-index: 250;
+	width: 500px;
+	height: 500px;
+	top: 0px;
+	left: 0px;
+	*/
+
+	position: absolute;
+	z-index: 10;
+	width: 500px;
+	height: 500px;
+	opacity: 0;
+	background-color: white;
+}
+
+#pjs-canvas-container
+{
+	position: relative;
+	/*z-index: 500;*/
+	/*border: 1px dashed red;*/
+	float: left;
+	display: block;
+	opacity: 0;
+}
+#processing-container
+{
+
+}
+
+#pjs_instance
+{
+	/*z-index: 50;*/
+	position: relative;
+}
+
+	/*  POPUPS AND NOTIFICATIONS  */
+
+	#popups-container
+	{
+		position: absolute;
+		width: 100%;
+		z-index: 8;
+		margin-top: 10px;
+		text-align: center;
+	}
+	#info-popup
+	{
+		/*position: fixed;*/
+		z-index: 8;
+		display: none;
+		background-color: white;
+		height: 200px;
+		font-size: 14px;
+	}
+	#instruction-popup
+	{
+		z-index: 8;
+		display: none;
+		background-color: rgba(255,255,255,0.8);
+		border: 1px solid grey;
+		border-radius: 7px;
+		width: 300px;
+		font-size: 16px;
+		line-height: 30px;
+		margin: 50px auto;
+	}
+		#instruction-popup p
+		{
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+
+		#info-popup img
+		{
+			margin: auto;
+			height: auto;
+		}
+		#info-popup-title
+		{
+			margin-bottom: 20px;
+		}
+		#info-popup-content
+		{
+			width: 70%;
+
+			margin: auto;
+		}
+			#info-popup-content img
+			{
+			text-align: center;
+			}
+			#info-popup-content p
+			{
+			text-align: left;
+			}
+		#close-disclaimer-button
+		{
+			margin-top: 20px;
+		}
+
+	#notifications-container
+	{
+		position: relative;
+		z-index: 8;
+		text-align: center;
+		margin: 50px 0 0 0;
+		width: 100%;
+		height: 400px;
+	}
+		#loading-notification
+		{
+			display: none;
+		}
+            #loading-gif
+            {
+                margin-top: 30px;
+            }
+		#nojs-notification
+		{
+			height: auto;
+		}
+
+
+#instruction-popup
+{
+
+}
+
+
+/*  FILTER PANEL  */
+
+#viz-filter-panel
+{
+	position: absolute;
+	z-index: 10;
+	width: auto;
+	height: auto;
+	padding: 10px 10px 5px 10px;
+	opacity: 0;
+	display: none;
+	margin: 10px 0 0 0;
+	background-color: rgba(255,255,255,0.8);
+	border: 1px solid grey;
+	border-radius: 7px;
+	font-size: 12px;
+}
+
+	#filter-title p
+	{
+		font-size: 12px;
+		font-weight: bold;
+	}
+
+	.filter-container
+	{
+		margin-top: 10px;
+	}
+	.filter-container p
+	{
+		font-weight: bold;
+	}
+
+	.filter-form
+	{
+		margin: 10px 0 0 0;
+	}
+
+		.filter-form input
+		{
+			opacity: 0;
+			margin-top: -5px;
+			display: none;
+
+		}
+		.filter-checkbox-label
+		{
+			display: block;
+			/*
+			background-image: url( ../i/br_tick_off.png );
+			background-repeat: no-repeat;*/
+			height: 15px;
+			margin-bottom: 5px;
+			cursor: pointer;
+		}
+
+
+        .checkbox-graphic
+        {
+	        width: 14px;
+	        height: 14px;
+	        background-image: url( "../i/br_tick_off.png" );
+	        float: left;
+	        margin-right: 5px;
+	        border-radius: 8px;
+	        box-sizing: border-box;
+        }
+
+
+
+
+
+
+/*  FOOTER  */
+
+#viz-footer
+{
+	position: relative;
+	float: right;
+	margin: 10px 0 50px 0;
+	font-size: 13px;
+	opacity: 0;
+	display: none;
+}
+
+	#footer-ui
+	{
+		float: left;
+		font-size: 11px;
+		height: auto;
+		padding: 10px 0 10px 0;
+		opacity: 1;
+		width: 100%;
+		overflow: hidden;
+	}
+	#footer-filter-ui
+	{
+		float: right;
+		width: auto;
+	}
+		#footer-filter-button-container
+		{
+			float: right;
+		}
+
+		.footer-filter-ui-label
+		{
+			float: left;
+			height: 20px;
+			margin: 0 5px 0 10px;
+			display: table;
+		}
+		.footer-filter-ui-label p
+		{
+			display: table-cell;
+			vertical-align: middle;
+			text-align: center;
+			color: #666;
+		}
+
+		.footer-filter-ui-button
+		{
+			display:inline-block;
+			float: left;
+			margin: 0 0 0 4px;
+			height: 20px;
+			background-color: white;
+			border: 1px solid grey;
+			border-radius: 7px;
+			display: none;
+			cursor:pointer;
+		}
+		.footer-filter-ui-button p
+		{
+			display: table-cell;
+			vertical-align: middle;
+			text-align: center;
+			padding: 0 5px 0 5px;
+		}
+
+	#ordering-label
+	{
+		display: table;
+	}
+	.footer-button
+	{
+		float: left;
+		width: 50%;
+		margin: 10px 0 10px 0;
+	}
+		.footer-button img
+		{
+			margin: 1px 5px 0 0;
+		}
+		.footer-button a
+		{
+			vertical-align: top;
+		}
+
+		#send-feedback-button
+		{
+			text-align: left;
+			visibility: hidden;
+		}
+		#see-the-data-button
+		{
+			text-align: right;
+		}
+	.footer-info
+	{
+		float: left;
+		width: 45%;
+		margin: 10px 0 10px 0;
+	}
+		#viz-credits-container
+		{
+			text-align: left;
+		}
+		#data-source-container
+		{
+			text-align: right;
+		}
+		#footer-spacer
+		{
+			width: 10%;
+		}
+
+	#footer-logo-container
+	{
+		width: 100%;
+		clear: both;
+	}
+	.footer-logo
+	{
+		float: left;
+		width: 33.3%;
+		margin: 0 0 20px 0;
+		visibility: hidden;
+	}
+		#footer-logo-001
+		{
+			text-align: left;
+		}
+		#footer-logo-002
+		{
+			text-align: center;
+		}
+		#footer-logo-003
+		{
+			text-align: right;
+		}

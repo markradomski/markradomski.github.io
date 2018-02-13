@@ -1,0 +1,626 @@
+[
+  {
+    "title": "...",
+    "name": "",
+    "firstvalue": "",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Header",
+    "name": "",
+    "firstvalue": "Text",
+    "secondvalue": "Font Size in Pixels",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "App Title",
+    "name": "title",
+    "firstvalue": "Snake Oil Superfoods?",
+    "secondvalue": 42,
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "App Primary Subtitle",
+    "name": "primarysubtitle",
+    "firstvalue": "Solid scientific evidence for extra health benefits of certain foods",
+    "secondvalue": 21,
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "App Secondary Subtitle",
+    "name": "secondarysubtitle",
+    "firstvalue": "showing tangible health effects",
+    "secondvalue": 16,
+    "Notes": "15 max",
+    "": ""
+  },
+  {
+    "title": "Mobile/Tablet Processing Notification",
+    "name": "processingnotification",
+    "firstvalue": "Processing, please wait",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "",
+    "name": "",
+    "firstvalue": "",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Entity Type Colours",
+    "name": "",
+    "firstvalue": "Type",
+    "secondvalue": "Hex Colour",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Pre-made Entity Type Colour Set",
+    "name": "entitycolourset",
+    "firstvalue": "Pastel",
+    "secondvalue": "",
+    "Notes": "This will override any custom entity colours",
+    "": ""
+  },
+  {
+    "title": "OR",
+    "name": "",
+    "firstvalue": "",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Type / Colour",
+    "name": "typecolour",
+    "firstvalue": "extract",
+    "secondvalue": "FF0000",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Type / Colour",
+    "name": "typecolour",
+    "firstvalue": "fruit",
+    "secondvalue": "00FF00",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Type / Colour",
+    "name": "typecolour",
+    "firstvalue": "grain",
+    "secondvalue": "0000FF",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Type / Colour",
+    "name": "typecolour",
+    "firstvalue": "herb / spice",
+    "secondvalue": "CCCCCC",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Type / Colour",
+    "name": "typecolour",
+    "firstvalue": "nut",
+    "secondvalue": "FF4444",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "",
+    "name": "",
+    "firstvalue": "",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Y Axis Scale",
+    "name": "",
+    "firstvalue": "Minimum Value",
+    "secondvalue": "Maximum Value",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Maximum and minimum values",
+    "name": "scale",
+    "firstvalue": 0,
+    "secondvalue": 6,
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "",
+    "name": "",
+    "firstvalue": "",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Y Axis Labels",
+    "name": "",
+    "firstvalue": "Value",
+    "secondvalue": "Label",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Label",
+    "name": "label",
+    "firstvalue": 6,
+    "secondvalue": "STRONG",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Label",
+    "name": "label",
+    "firstvalue": 5,
+    "secondvalue": "GOOD",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Label",
+    "name": "label",
+    "firstvalue": 4,
+    "secondvalue": "PROMISING",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Label",
+    "name": "label",
+    "firstvalue": 3,
+    "secondvalue": "INCONCLUSIVE",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Label",
+    "name": "label",
+    "firstvalue": 2,
+    "secondvalue": "SOME",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Label",
+    "name": "label",
+    "firstvalue": 1,
+    "secondvalue": "SLIGHT",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Label",
+    "name": "label",
+    "firstvalue": 0,
+    "secondvalue": "NO EVIDENCE",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "",
+    "name": "",
+    "firstvalue": "",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Dividing Lines",
+    "name": "",
+    "firstvalue": "Position",
+    "secondvalue": "Label",
+    "Notes": "A line needs a Position and a Label or it will not appear in the viz.",
+    "": ""
+  },
+  {
+    "title": "Dividing Line",
+    "name": "line",
+    "firstvalue": 3.7,
+    "secondvalue": "WORTH TAKING THRESHOLD,",
+    "Notes": "Set the upper and lower text in the Label field, separated by a comma.",
+    "": ""
+  },
+  {
+    "title": "Dividing Line",
+    "name": "line",
+    "firstvalue": 2,
+    "secondvalue": "WORTH INVESTIGATING THRESHOLD,",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "",
+    "name": "",
+    "firstvalue": "",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Bubbles",
+    "name": "",
+    "firstvalue": "Minimum Bubble Size",
+    "secondvalue": "Maximum Bubble Size",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Max and Min Bubbles Sizes",
+    "name": "bubblesizes",
+    "firstvalue": 10,
+    "secondvalue": 90,
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "",
+    "name": "",
+    "firstvalue": "",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Bubble Gradient",
+    "name": "",
+    "firstvalue": "Gradient Colour Set",
+    "secondvalue": "Gradient Direction",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Pre-made Gradient Colour Set",
+    "name": "gradientcolourset",
+    "firstvalue": "yellow > orange > pink",
+    "secondvalue": "Bottom to Top",
+    "Notes": "Choosing a colour set will override any custom gradient unless set to \"None",
+    "": ""
+  },
+  {
+    "title": "OR",
+    "name": "",
+    "firstvalue": "",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Bubble Gradient Colours",
+    "name": "",
+    "firstvalue": "Position",
+    "secondvalue": "Hex Colour",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Gradient Colour",
+    "name": "gradientcolour",
+    "firstvalue": 6,
+    "secondvalue": "433f92",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Gradient Colour",
+    "name": "gradientcolour",
+    "firstvalue": 3,
+    "secondvalue": "47b25b",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Gradient Colour",
+    "name": "gradientcolour",
+    "firstvalue": 0,
+    "secondvalue": "fff9d1",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "",
+    "name": "",
+    "firstvalue": "",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Highlights",
+    "name": "",
+    "firstvalue": "Show Highlights?",
+    "secondvalue": "Hex Colour",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Hex colour for \"highlight\" bubbles",
+    "name": "onetowatchcolour",
+    "firstvalue": "Only when colouring by Primary Value",
+    "secondvalue": "8ab5ff",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "",
+    "name": "",
+    "firstvalue": "",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Functionality",
+    "name": "",
+    "firstvalue": "Enable this functionality in the viz?",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Allow user to change bubble colours",
+    "name": "func_colour_by_type",
+    "firstvalue": "Both (default to Primary Value)",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Let users view notes for bubbles",
+    "name": "func_notes",
+    "firstvalue": "Yes",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "",
+    "name": "",
+    "firstvalue": "",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Bubble Size",
+    "name": "",
+    "firstvalue": "",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Size Bubbles by Metric 1",
+    "name": "func_filter_metric_001",
+    "firstvalue": "Yes",
+    "secondvalue": "",
+    "Notes": "Can the user choose what the bubble size represents?",
+    "": ""
+  },
+  {
+    "title": "Size Bubbles by Metric 2",
+    "name": "func_filter_metric_002",
+    "firstvalue": "No",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Size Bubbles by Metric 3",
+    "name": "func_filter_metric_003",
+    "firstvalue": "Yes",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Size Bubbles by Metric 4",
+    "name": "func_filter_metric_004",
+    "firstvalue": "No",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "",
+    "name": "",
+    "firstvalue": "",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "X-Axis Sorting",
+    "name": "",
+    "firstvalue": "",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Can bubbles be reordered along the X axis?",
+    "name": "func_allow_reordering",
+    "firstvalue": "Yes",
+    "secondvalue": "",
+    "Notes": "Setting this to Off will hide all X-axis sorting controls",
+    "": ""
+  },
+  {
+    "title": "Allow Sort Bubbles by Metric 1",
+    "name": "func_xaxis_metric_001",
+    "firstvalue": "Yes",
+    "secondvalue": "",
+    "Notes": "Can the user choose to sort bubbles along the x-axis?",
+    "": ""
+  },
+  {
+    "title": "Allow Sort Bubbles by Metric 2",
+    "name": "func_xaxis_metric_002",
+    "firstvalue": "No",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Allow Sort Bubbles by Metric 3",
+    "name": "func_xaxis_metric_003",
+    "firstvalue": "Yes",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Allow Sort Bubbles by Metric 4",
+    "name": "func_xaxis_metric_004",
+    "firstvalue": "No",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "",
+    "name": "",
+    "firstvalue": "",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Labels",
+    "name": "",
+    "firstvalue": "Text",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Bubble \"Click to see notes\" text",
+    "name": "shownoteslabel",
+    "firstvalue": "Click here to read our notes",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Bubble \"Click to open source\" text",
+    "name": "opensourcelabel",
+    "firstvalue": "Click here to see lead study",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "",
+    "name": "",
+    "firstvalue": "",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "",
+    "name": "",
+    "firstvalue": "",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Disclaimer",
+    "name": "",
+    "firstvalue": "Title",
+    "secondvalue": "Content",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Disclaimer Text",
+    "name": "disclaimer",
+    "firstvalue": "",
+    "secondvalue": "",
+    "Notes": "If the Disclaimer Copy field is empty then the disclaimer will not appear.",
+    "": "<p>The information here shouldn't be taken as health advice. If you're concerned about your health, see your doctor. Otherwise, click on.</p>"
+  },
+  {
+    "title": "",
+    "name": "",
+    "firstvalue": "",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Footer",
+    "name": "",
+    "firstvalue": "HTML",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Credits Text",
+    "name": "credits",
+    "firstvalue": "Version 1.0 // Sep 2013<br/>design & concept: David McCandless<br/>code: <a href=\"http://www.acatacalledfrank.com\" target=\"_blank\">Tom Evans</a>, David McCandless <br/><br/>",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Source Text",
+    "name": "source",
+    "firstvalue": "Sources: PubMed, Cochrane.org, <a href=\"http://www.examine.com\">Examine.com</a>\nRCTs and population studies. Metastudies & large trials used where possible. Research: Miriam Quick, Kesta Desmond",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Send Feedback",
+    "name": "sendfeedbacklink",
+    "firstvalue": "https://docs.google.com/forms/d/1A7la8fR8tqEWp8QJ5ySpfN7tLKXGfl-CjzFYI_JnoHg/viewform",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "Client Logo URL",
+    "name": "logourl",
+    "firstvalue": "",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "VizSweet Logo URL",
+    "name": "vizsweetlink",
+    "firstvalue": "http://www.informationisbeautiful.net/vizsweet/",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  },
+  {
+    "title": "See the Data link",
+    "name": "seethedatalink",
+    "firstvalue": "https://docs.google.com/spreadsheet/ccc?key=0Aqe2P9sYhZ2ndEJVZkdDV1lrVVRtaHppTDlhOTFEUkE#gid=2",
+    "secondvalue": "",
+    "Notes": "",
+    "": ""
+  }
+]

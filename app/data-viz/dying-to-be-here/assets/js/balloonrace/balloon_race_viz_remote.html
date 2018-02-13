@@ -1,0 +1,158 @@
+<!doctype html>
+
+<head>
+	<meta name="viewport" content="width=device-width" />
+	<meta HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+	<meta HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
+	<link href="s/reset.css" rel="stylesheet" type="text/css">
+	<link href="s/viz_style.css" rel="stylesheet" type="text/css">
+	<script src="js/jquery-1.7.2.min.js"></script>
+	<script src="js/balloonrace.min.js?<?php echo time(); ?>"></script>
+	<script src="js/processing-1.4.0.min.js"></script>
+	<script src="js/greensock/easing/EasePack.min.js"></script>
+	<script src="js/greensock/plugins/CSSPlugin.min.js"></script>
+	<script src="js/greensock/TweenLite.min.js"></script>
+	<script type="text/javascript">
+		var my_analytics_id = "UA-33544562-1";
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', my_analytics_id]);
+		_gaq.push(['_trackPageview']);
+
+		(function () {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+
+</head>
+
+<body>
+	<div id="balloon-race-visualisation-container">
+		<div id="viz-header">
+			<div id="viz-header-inner">
+				<!-- <div id="header-title-container">
+					<p id="main-title"></p>
+					<p id="primary-sub-title"></p>
+					<p id="secondary-sub-title"></p>
+					<p id="dimensions"></p>
+				</div> -->
+				<div id="viz-key">
+					<div id="one-to-watch-circle"></div>
+					<div id="one-to-watch-key-label">One to watch</div>
+				</div>
+				<div id="header-ui">
+					<div id="header-filter-ui">
+						<div class="header-ui-container">
+							<div class="header-filter-ui-label" id="bubble-size-label">
+								<p>BUBBLE SIZE</p>
+							</div>
+							<div class="header-filter-ui-button" id="metric_001-filter-button" button_index="0">
+								<p>METRIC 1</p>
+							</div>
+							<div class="header-filter-ui-button" id="metric_002-filter-button" button_index="0">
+								<p>METRIC 2</p>
+							</div>
+							<div class="header-filter-ui-button" id="metric_003-filter-button" button_index="1">
+								<p>METRIC 3</p>
+							</div>
+							<div class="header-filter-ui-button" id="metric_004-filter-button" button_index="2">
+								<p>METRIC 4</p>
+							</div>
+						</div>
+						<div class="header-ui-container">
+							<div class="header-filter-ui-label" id="bubble-colour-label">
+								<p>BUBBLE COLOUR</p>
+							</div>
+							<div class="header-filter-ui-button" id="value-colour-button" button_index="0">
+								<p>EVIDENCE</p>
+							</div>
+							<div class="header-filter-ui-button" id="type-colour-button" button_index="1">
+								<p>TYPE</p>
+							</div>
+						</div>
+					</div>
+					<div class="header-filter-ui-button" id="header-scale-label">
+						<p>PRIMARY</p>
+					</div>
+
+					<div class="header-filter-ui-button" id="filter-show-button">
+						<p id="filter-show-button-label"><img src="i/balloon_race_icon_filter_8px.png" /> HIDE FILTER</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="notifications-container">
+			<!--<div id="nojs-notification"><img src="user-editable/fallback.gif" /></div>-->
+			<div id="loading-notification">Loading, please wait.</div>
+			<div id="loading-gif"><img src="i/loader.gif" width="15px" height="15px"></div>
+
+		</div>
+		<div id="popups-container">
+			<div id="info-popup">
+				<p id="info-popup-title"></p>
+				<div id="info-popup-content"></div>
+				<input id="close-disclaimer-button" type="button" value="OK" />
+			</div>
+			<div id="instruction-popup">
+				<p></p>
+			</div>
+		</div>
+		<div id="pjs-canvas-container">
+			<div id="mousetrap"></div>
+			<canvas id="pjs_instance" data-processing-sources="pjs/balloonrace.min.pde"></canvas>
+		</div>
+		<div id="viz-filter-panel">
+			<div id="filter-title">
+				<p>Filter by...</p>
+			</div>
+			<div class="filter-container" id="category-filters-container">
+				<p>Categories</p>
+				<form class="filter-form" id="category-filters"></form>
+			</div>
+			<div class="filter-container" id="type-filters-container">
+				<p>Types</p>
+				<form class="filter-form" id="type-filters"></form>
+			</div>
+		</div>
+		<div id="viz-footer" style="width: 1275px; display: block; opacity: 1;">
+			<div class="dividing-line"></div>
+			<div id="footer-ui">
+				<div id="footer-filter-ui">
+					<div class="footer-filter-ui-label" id="ordering-label">
+						<p>ORDER X-AXIS BY</p>
+					</div>
+					<div id="footer-filter-button-container">
+						<div class="footer-filter-ui-button" id="name-ordering-button" button_index="0" style="background-color: grey; color: white; display: table;">
+							<p>ALPHABETICAL</p>
+						</div>
+						<div class="footer-filter-ui-button" id="metric_001-ordering-button" button_index="0">
+							<p></p>
+						</div>
+						<div class="footer-filter-ui-button" id="metric_002-ordering-button" button_index="1" style="background-color: white; color: black; display: table;">
+							<p></p>
+						</div>
+						<div class="footer-filter-ui-button" id="metric_003-ordering-button" button_index="2">
+							<p></p>
+						</div>
+						<div class="footer-filter-ui-button" id="metric_004-ordering-button" button_index="3">
+							<p></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="dividing-line" id="footer-filter-ui-divider"></div>
+			<div class="footer-button" id="send-feedback-button"></div>
+			<div class="footer-button" id="see-the-data-button"></div>
+			<div class="dividing-line no-float"></div>
+			<div class="footer-info" id="viz-credits-container"></div>
+			<div class="footer-info" id="footer-spacer"></div>
+			<div class="footer-info" id="data-source-container"></div>
+			<div id="footer-logo-container">
+				<div class="footer-logo" id="footer-logo-001"></div>
+				<div class="footer-logo" id="footer-logo-002"></div>
+				<div class="footer-logo" id="footer-logo-003"></div>
+			</div>
+		</div>
+</body>
