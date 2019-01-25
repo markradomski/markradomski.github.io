@@ -1,11 +1,11 @@
 {
-  "main.js": "/static/js/main.46f4481b.chunk.js",
-  "main.js.map": "/static/js/main.46f4481b.chunk.js.map",
-  "static/js/1.817444c9.chunk.js": "/static/js/1.817444c9.chunk.js",
-  "static/js/1.817444c9.chunk.js.map": "/static/js/1.817444c9.chunk.js.map",
-  "runtime~main.js": "/static/js/runtime~main.229c360f.js",
-  "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
-  "index.html": "/index.html",
-  "precache-manifest.87ab380d1e908167c24cab1f5e9161c0.js": "/precache-manifest.87ab380d1e908167c24cab1f5e9161c0.js",
-  "service-worker.js": "/service-worker.js"
+  "main.js": "/app/sedition-art/static/js/main.0570623c.chunk.js",
+  "main.js.map": "/app/sedition-art/static/js/main.0570623c.chunk.js.map",
+  "static/js/1.388c9ac7.chunk.js": "/app/sedition-art/static/js/1.388c9ac7.chunk.js",
+  "static/js/1.388c9ac7.chunk.js.map": "/app/sedition-art/static/js/1.388c9ac7.chunk.js.map",
+  "runtime~main.js": "/app/sedition-art/static/js/runtime~main.c7675457.js",
+  "runtime~main.js.map": "/app/sedition-art/static/js/runtime~main.c7675457.js.map",
+  "index.html": "/app/sedition-art/index.html",
+  "precache-manifest.e33516a93c08d62afb91573448e18855.js": "/app/sedition-art/precache-manifest.e33516a93c08d62afb91573448e18855.js",
+  "service-worker.js": "/app/sedition-art/service-worker.js"
 }
