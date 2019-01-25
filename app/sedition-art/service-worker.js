@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/app/sedition-art/precache-manifest.e33516a93c08d62afb91573448e18855.js"
+  "/app/sedition-art/precache-manifest.e2ccec5c3a0a97ea4aece616e53b4724.js"
 );
 
 workbox.clientsClaim();
