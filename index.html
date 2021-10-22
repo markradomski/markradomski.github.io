@@ -2,10 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1, shrink-to-fit=no"
-		/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 		<meta http-equiv="x-ua-compatible" content="ie=edge" />
 		<meta name="description" content="Portfolio of Mark Radomski" />
 		<title>Mark Radomski</title>
@@ -13,30 +10,38 @@
 		<link rel="stylesheet" href="css/styles.css" />
 		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
 	</head>
-
 	<body>
 		<header>
-			<nav class="navbar navbar-light navbar-full navbar-fixed-top">
+			<nav class="navbar navbar-expand navbar-light">
 				<div class="container-fluid">
 					<a class="navbar-logo link-plus h3" href="/">MR</a>
-					<div class="navbar-nav">
-						<a class="nav-item nav-link pull-xs-right" href="/about.html"
-							>About</a
-						>
-					</div>
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" href="/about.html">About</a>
+						</li>
+					</ul>
 				</div>
 			</nav>
 		</header>
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-6 col-md-4">
+				<div class="col-sm-6 col-lg-4">
+					<div class="card">
+						<a href="app/womad/" class="link">
+							<img class="card-img-top" src="images/womad-app-shots.jpg" alt="WOMADelaide mobile app" />
+							<div class="card-body">
+								<p class="card-text text-truncate">WOMAD AR app</p>
+								<p class="card-text text-truncate">
+									<small class="text-muted">UX design and case study</small>
+								</p>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-4">
 					<div class="card">
 						<a href="http://www.bezor.com.au" target="_blank" class="link">
-							<img
-								class="card-img-top"
-								src="images/bezor-site.jpg"
-								alt="Bezor site"
-							/>
+							<img class="card-img-top" src="images/bezor-site.jpg" alt="Bezor site" />
 							<div class="card-body">
 								<p class="card-text text-truncate">Annette Bezor</p>
 								<p class="card-text text-truncate">
@@ -46,18 +51,49 @@
 						</a>
 					</div>
 				</div>
-				<div class="col-sm-6 col-md-4">
+				<div class="col-sm-6 col-lg-4">
 					<div class="card">
-						<a
-							href="https://markradomski.github.io/blockchain/"
-							target="_blank"
-							class="link"
-						>
-							<img
-								class="card-img-top"
-								src="images/blockchain.png"
-								alt="blockchain"
-							/>
+						<a href="app/dunning-kruger" class="link">
+							<img class="card-img-top" src="images/dunning-kruger.jpg" alt="Dunning Kruger Effect" />
+							<div class="card-body">
+								<p class="card-text text-truncate">Dunning-Kruger Effect</p>
+								<p class="card-text text-truncate">
+									<small class="text-muted">Cinema 4D / After Effects</small>
+								</p>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-4">
+					<div class="card">
+						<a href="app/preppr/" class="link">
+							<img class="card-img-top" src="images/preppr.jpg" alt="Preppr mobile app" />
+							<div class="card-body">
+								<p class="card-text text-truncate">Instagram scheduler app</p>
+								<p class="card-text text-truncate">
+									<small class="text-muted">React Native / Expo</small>
+								</p>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-4">
+					<div class="card">
+						<a href="app/data-viz/" class="link">
+							<img class="card-img-top" src="images/dying-to-be-here.png" alt="Dying to be here" />
+							<div class="card-body">
+								<p class="card-text text-truncate">Dying to be here / The Smashed Avocado Wars</p>
+								<p class="card-text text-truncate">
+									<small class="text-muted">Data visualisation / Javascript </small>
+								</p>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-4">
+					<div class="card">
+						<a href="https://markradomski.github.io/blockchain/" target="_blank" class="link">
+							<img class="card-img-top" src="images/blockchain.png" alt="blockchain" />
 							<div class="card-body">
 								<p class="card-text text-truncate">Blockchain</p>
 								<p class="card-text text-truncate">
@@ -67,18 +103,10 @@
 						</a>
 					</div>
 				</div>
-				<div class="col-sm-6 col-md-4">
+				<div class="col-sm-6 col-lg-4">
 					<div class="card">
-						<a
-							href="https://hi-art-react-prod.herokuapp.com/"
-							target="_blank"
-							class="link"
-						>
-							<img
-								class="card-img-top"
-								src="images/hi-art.png"
-								alt="Hi Art online store"
-							/>
+						<a href="https://hi-art-react-prod.herokuapp.com/" target="_blank" class="link">
+							<img class="card-img-top" src="images/hi-art.jpg" alt="Hi Art online store" />
 							<div class="card-body">
 								<p class="card-text text-truncate">Hi Art online store</p>
 								<p class="card-text text-truncate">
@@ -88,128 +116,25 @@
 						</a>
 					</div>
 				</div>
-				<div class="col-sm-6 col-md-4">
-					<div class="card">
-						<a href="app/womad/" class="link">
-							<img
-								class="card-img-top"
-								src="images/womad-futuro.png"
-								alt="WOMADelaide mobile app"
-							/>
-							<div class="card-body">
-								<p class="card-text text-truncate">
-									WOMADelaide Music Festival
-								</p>
-								<p class="card-text text-truncate">
-									<small class="text-muted"
-										>Case study and mobile app design</small
-									>
-								</p>
-							</div>
-						</a>
-					</div>
-				</div>
-				<div class="col-sm-6 col-md-4">
+
+				<div class="col-sm-6 col-lg-4">
 					<div class="card">
 						<a href="app/bezor-software/" class="link">
-							<img
-								class="card-img-top"
-								src="images/bezor-software.png"
-								alt="Bezor software"
-							/>
+							<img class="card-img-top" src="images/bezor-software.png" alt="Bezor software" />
 							<div class="card-body">
 								<p class="card-text text-truncate">Bezor software</p>
 								<p class="card-text text-truncate">
-									<small class="text-muted"
-										>Serverless eCommerce store / Firebase</small
-									>
+									<small class="text-muted">Vue / Firebase </small>
 								</p>
 							</div>
 						</a>
 					</div>
 				</div>
-				<div class="col-sm-6 col-md-4">
+
+				<div class="col-sm-6 col-lg-4">
 					<div class="card">
-						<a href="app/preppr/" class="link">
-							<img
-								class="card-img-top"
-								src="images/preppr.png"
-								alt="Preppr mobile app"
-							/>
-							<div class="card-body">
-								<p class="card-text text-truncate">Preppr android app</p>
-								<p class="card-text text-truncate">
-									<small class="text-muted">React Native</small>
-								</p>
-							</div>
-						</a>
-					</div>
-				</div>
-				<div class="col-sm-6 col-md-4">
-					<div class="card">
-						<a href="app/farnsworth-711/" class="link">
-							<img
-								class="card-img-top"
-								src="images/farnsworth-711.png"
-								alt="Mies van der Rohe 7 Eleven"
-							/>
-							<div class="card-body">
-								<p class="card-text text-truncate">
-									Mies van der Rohe 7 Eleven
-								</p>
-								<p class="card-text text-truncate">
-									<small class="text-muted">3D modelling / Blender</small>
-								</p>
-							</div>
-						</a>
-					</div>
-				</div>
-				<div class="col-sm-6 col-md-4">
-					<div class="card">
-						<a href="app/data-viz/dying-to-be-here/" class="link">
-							<img
-								class="card-img-top"
-								src="images/dying-to-be-here.png"
-								alt="Dying to be here"
-							/>
-							<div class="card-body">
-								<p class="card-text text-truncate">Dying to be here</p>
-								<p class="card-text text-truncate">
-									<small class="text-muted"
-										>Data visualisation / Javascript
-									</small>
-								</p>
-							</div>
-						</a>
-					</div>
-				</div>
-				<div class="col-sm-6 col-md-4">
-					<div class="card">
-						<a href="app/data-viz/pollywaffle/" class="link">
-							<img
-								class="card-img-top"
-								src="images/pollywaffle.png"
-								alt="The Smashed Avocado Wars"
-							/>
-							<div class="card-body">
-								<p class="card-text text-truncate">The Smashed Avocado Wars</p>
-								<p class="card-text text-truncate">
-									<small class="text-muted"
-										>Data visualisation / Javascript
-									</small>
-								</p>
-							</div>
-						</a>
-					</div>
-				</div>
-				<div class="col-sm-6 col-md-4">
-					<div class="card">
-						<a href="app/data-viz/there-will-be-blood/" class="link">
-							<img
-								class="card-img-top"
-								src="images/unemployment-map.jpg"
-								alt="There will be blood"
-							/>
+						<a href="app/there-will-be-blood/" class="link">
+							<img class="card-img-top" src="images/unemployment-map.jpg" alt="There will be blood" />
 							<div class="card-body">
 								<p class="card-text text-truncate">There will be blood</p>
 								<p class="card-text text-truncate">
