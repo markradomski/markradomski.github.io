@@ -1,0 +1,556 @@
+{
+  "results": [
+    {
+      "name": {
+        "first": "brad",
+        "last": "gibson"
+      },
+      "location": {
+        "inlatt": "56.07883",
+        "distance": "0.000",
+        "timezone": "America/Winnipeg",
+        "elevation": "162",
+        "region": {},
+        "state": "CA",
+        "latt": "56.07883",
+        "longt": "-91.61257",
+        "city": "Peckinow Portage",
+        "prov": "Manitoba",
+        "inlongt": "-91.61257",
+        "altgeocode": "PECKINOW-KZJVQ"
+      },
+      "dept": {
+        "name": "Engineering",
+        "color": "#fff",
+        "backgroundColor": "#32e0ff",
+        "title": "Associate Professor",
+        "description": "Our faculty’s eight schools offer undergraduate, postgraduate coursework and research degrees across all disciplines",
+        "bio": "Any time scientists disagree, its because we have insufficient data. Then we can agree on what kind of data to get we get the data and the data solves the problem. Either I'm right, or you're right or we're both wrong. And we move on. That kind of conflict resolution does not exist in politics or religion. Big ideas, big ambitious projects need to be embedded within culture at a level deeper than the political winds. It needs to be deeper than the economic fluctuations that could turn people against an expensive project because they're on an unemployment line and can't feed their families. Those who see the cosmic perspective as a depressing outlook, they really need to reassess how they think about the world. Because when I look up in the universe, I know I'm small but I'm also big. I'm big because I'm connected to the universe, and the universe is connected to me. Typically, when you look for role models, you want someone who has your interests and came from the same background. Well, look how restricting that is. What people should do is take role models a la carte. If there's someone whose character you appreciated, you respect that trait."
+      },
+      "email": "brad@singularity.edu",
+      "uuid": "155e77ee-ba6d-486f-95ce-0e0c0fb4b919",
+      "picture": {
+        "large": "assets/images/test.jpg",
+        "thumbnail": "assets/images/thumbnails/test.jpg"
+      }
+    },
+    {
+      "name": {
+        "first": "Andrew",
+        "last": "jones"
+      },
+      "location": {
+        "inlatt": "51.4647",
+        "distance": "10.458",
+        "timezone": "Europe/London",
+        "elevation": "25",
+        "region": "Greater London",
+        "name": "London",
+        "state": "UK",
+        "latt": "51.50853",
+        "longt": "-0.12574",
+        "city": "London",
+        "prov": "England",
+        "inlongt": "0.0079"
+      },
+      "dept": {
+        "name": "Engineering",
+        "color": "#fff",
+        "backgroundColor": "#32e0ff",
+        "title": "Associate Professor",
+        "description": "Our faculty’s eight schools offer undergraduate, postgraduate coursework and research degrees across all disciplines",
+        "bio": "Any time scientists disagree, its because we have insufficient data. Then we can agree on what kind of data to get we get the data and the data solves the problem. Either I'm right, or you're right or we're both wrong. And we move on. That kind of conflict resolution does not exist in politics or religion. Big ideas, big ambitious projects need to be embedded within culture at a level deeper than the political winds. It needs to be deeper than the economic fluctuations that could turn people against an expensive project because they're on an unemployment line and can't feed their families. Those who see the cosmic perspective as a depressing outlook, they really need to reassess how they think about the world. Because when I look up in the universe, I know I'm small but I'm also big. I'm big because I'm connected to the universe, and the universe is connected to me. Typically, when you look for role models, you want someone who has your interests and came from the same background. Well, look how restricting that is. What people should do is take role models a la carte. If there's someone whose character you appreciated, you respect that trait."
+      },
+      "email": "andrew@singularity.edu",
+      "uuid": "155e77ee-ba6d-486f-95ce-0e0c0fb4b919",
+      "picture": {
+        "large": "assets/images/0a7283e3-0f4d-4240-a181-c61434962912_Altschul,+Daniel_cropped_web_BH_2019.jpg",
+        "thumbnail": "assets/images/thumbnails/0a7283e3-0f4d-4240-a181-c61434962912_Altschul,+Daniel_cropped_web_BH_2019.jpg"
+      }
+    },
+    {
+      "name": {
+        "first": "sue",
+        "last": "Rickshaw"
+      },
+      "location": {
+        "inlatt": "31.394244",
+        "distance": "0.000",
+        "timezone": "Asia/Baghdad",
+        "elevation": "436",
+        "region": "Al-Rutba District",
+        "name": "Majmma‘ Kumrukī",
+        "state": "IQ",
+        "latt": "31.394244",
+        "longt": "41.462732",
+        "city": "Jadīdat ‘Ar‘Ar",
+        "prov": "Anbar",
+        "inlongt": "41.462732",
+        "altgeocode": "MAJMMA-ELPIX"
+      },
+      "dept": {
+        "name": "Engineering",
+        "color": "#fff",
+        "backgroundColor": "#32e0ff",
+        "title": "Associate Professor",
+        "description": "Our faculty’s eight schools offer undergraduate, postgraduate coursework and research degrees across all disciplines",
+        "bio": "Any time scientists disagree, its because we have insufficient data. Then we can agree on what kind of data to get we get the data and the data solves the problem. Either I'm right, or you're right or we're both wrong. And we move on. That kind of conflict resolution does not exist in politics or religion. Big ideas, big ambitious projects need to be embedded within culture at a level deeper than the political winds. It needs to be deeper than the economic fluctuations that could turn people against an expensive project because they're on an unemployment line and can't feed their families. Those who see the cosmic perspective as a depressing outlook, they really need to reassess how they think about the world. Because when I look up in the universe, I know I'm small but I'm also big. I'm big because I'm connected to the universe, and the universe is connected to me. Typically, when you look for role models, you want someone who has your interests and came from the same background. Well, look how restricting that is. What people should do is take role models a la carte. If there's someone whose character you appreciated, you respect that trait."
+      },
+      "email": "sue@singularity.edu",
+      "uuid": "155e77ee-ba6d-486f-95ce-0e0c0fb4b919",
+      "picture": {
+        "large": "assets/images/a129f70e-6114-4a64-ae83-84be634dd09a_roseann_abraham_uncropped_bh_2019.jpg",
+        "thumbnail": "assets/images/thumbnails/a129f70e-6114-4a64-ae83-84be634dd09a_roseann_abraham_uncropped_bh_2019.jpg"
+      }
+    },
+    {
+      "name": {
+        "first": "lee",
+        "last": "smith"
+      },
+      "location": {
+        "inlatt": "-6.425",
+        "distance": "0.000",
+        "timezone": {},
+        "elevation": {},
+        "region": {},
+        "state": "ID",
+        "latt": "-6.425",
+        "longt": "104.5",
+        "city": "Tanjung Cukubalimbing",
+        "prov": "Tanjung",
+        "inlongt": "104.5",
+        "altgeocode": "CUKID-HYPBW"
+      },
+      "dept": {
+        "name": "Engineering",
+        "color": "#fff",
+        "backgroundColor": "#32e0ff",
+        "title": "Associate Professor",
+        "description": "Our faculty’s eight schools offer undergraduate, postgraduate coursework and research degrees across all disciplines",
+        "bio": "Any time scientists disagree, its because we have insufficient data. Then we can agree on what kind of data to get we get the data and the data solves the problem. Either I'm right, or you're right or we're both wrong. And we move on. That kind of conflict resolution does not exist in politics or religion. Big ideas, big ambitious projects need to be embedded within culture at a level deeper than the political winds. It needs to be deeper than the economic fluctuations that could turn people against an expensive project because they're on an unemployment line and can't feed their families. Those who see the cosmic perspective as a depressing outlook, they really need to reassess how they think about the world. Because when I look up in the universe, I know I'm small but I'm also big. I'm big because I'm connected to the universe, and the universe is connected to me. Typically, when you look for role models, you want someone who has your interests and came from the same background. Well, look how restricting that is. What people should do is take role models a la carte. If there's someone whose character you appreciated, you respect that trait."
+      },
+      "email": "lee@singularity.edu",
+      "uuid": "155e77ee-ba6d-486f-95ce-0e0c0fb4b919",
+      "picture": {
+        "large": "assets/images/0aec6707-c2d9-49cd-8176-300e88d81def_Ahmed_+Faiez_2021_710x841.jpg",
+        "thumbnail": "assets/images/thumbnails/0aec6707-c2d9-49cd-8176-300e88d81def_Ahmed_+Faiez_2021_710x841.jpg"
+      }
+    },
+    {
+      "name": {
+        "first": "Dan",
+        "last": "Brown"
+      },
+      "location": {
+        "inlatt": "40.415438",
+        "distance": "0.000",
+        "timezone": "Asia/Pyongyang",
+        "elevation": "1148",
+        "region": {},
+        "name": "Tolmakp’yŏng",
+        "state": "KP",
+        "latt": "40.41544",
+        "longt": "127.04265",
+        "city": "Tolmakp'yong",
+        "prov": "Hamgyŏng-namdo",
+        "inlongt": "127.042651",
+        "altgeocode": "TOLMAKP-NNXTJ"
+      },
+      "dept": {
+        "name": "Engineering",
+        "color": "#fff",
+        "backgroundColor": "#32e0ff",
+        "title": "Associate Professor",
+        "description": "Our faculty’s eight schools offer undergraduate, postgraduate coursework and research degrees across all disciplines",
+        "bio": "Any time scientists disagree, its because we have insufficient data. Then we can agree on what kind of data to get we get the data and the data solves the problem. Either I'm right, or you're right or we're both wrong. And we move on. That kind of conflict resolution does not exist in politics or religion. Big ideas, big ambitious projects need to be embedded within culture at a level deeper than the political winds. It needs to be deeper than the economic fluctuations that could turn people against an expensive project because they're on an unemployment line and can't feed their families. Those who see the cosmic perspective as a depressing outlook, they really need to reassess how they think about the world. Because when I look up in the universe, I know I'm small but I'm also big. I'm big because I'm connected to the universe, and the universe is connected to me. Typically, when you look for role models, you want someone who has your interests and came from the same background. Well, look how restricting that is. What people should do is take role models a la carte. If there's someone whose character you appreciated, you respect that trait."
+      },
+      "email": "dan@singularity.edu",
+      "uuid": "155e77ee-ba6d-486f-95ce-0e0c0fb4b919",
+      "picture": {
+        "large": "assets/images/7ed82e6d-cc6c-4068-8200-6701b2b7dd60_Aitchison_+Mark_web_cropped_BH_2020.jpg",
+        "thumbnail": "assets/images/thumbnails/7ed82e6d-cc6c-4068-8200-6701b2b7dd60_Aitchison_+Mark_web_cropped_BH_2020.jpg"
+      }
+    },
+    {
+      "name": {
+        "first": "chris",
+        "last": "Radski"
+      },
+      "location": {
+        "inlatt": "-70.95",
+        "distance": "0.000",
+        "timezone": "Antarctica/Mawson",
+        "elevation": "1761",
+        "region": {},
+        "state": "AQ",
+        "latt": "-70.95",
+        "longt": "65.16667",
+        "city": "Rovnaja, dolina",
+        "prov": "Mawson",
+        "inlongt": "65.16667",
+        "altgeocode": "ROVNAJA-JVIAH"
+      },
+      "dept": {
+        "name": "Engineering",
+        "color": "#fff",
+        "backgroundColor": "#32e0ff",
+        "title": "Associate Professor",
+        "description": "Our faculty’s eight schools offer undergraduate, postgraduate coursework and research degrees across all disciplines",
+        "bio": "Any time scientists disagree, its because we have insufficient data. Then we can agree on what kind of data to get we get the data and the data solves the problem. Either I'm right, or you're right or we're both wrong. And we move on. That kind of conflict resolution does not exist in politics or religion. Big ideas, big ambitious projects need to be embedded within culture at a level deeper than the political winds. It needs to be deeper than the economic fluctuations that could turn people against an expensive project because they're on an unemployment line and can't feed their families. Those who see the cosmic perspective as a depressing outlook, they really need to reassess how they think about the world. Because when I look up in the universe, I know I'm small but I'm also big. I'm big because I'm connected to the universe, and the universe is connected to me. Typically, when you look for role models, you want someone who has your interests and came from the same background. Well, look how restricting that is. What people should do is take role models a la carte. If there's someone whose character you appreciated, you respect that trait."
+      },
+      "email": "chris@singularity.edu",
+      "uuid": "155e77ee-ba6d-486f-95ce-0e0c0fb4b919",
+      "picture": {
+        "large": "assets/images/08c711c6-a081-4520-842f-bd1908f71d1e_Andersen,+Dan_cropped_web_BH_2019.jpg",
+        "thumbnail": "assets/images/thumbnails/08c711c6-a081-4520-842f-bd1908f71d1e_Andersen,+Dan_cropped_web_BH_2019.jpg"
+      }
+    },
+    {
+      "name": {
+        "first": "glen",
+        "last": "frank"
+      },
+      "location": {
+        "inlatt": "33.47979",
+        "distance": "0.000",
+        "timezone": "America/Denver",
+        "elevation": "2189",
+        "region": "Catron County",
+        "name": "Minnehoha Mine",
+        "state": "US",
+        "latt": "33.47979",
+        "longt": "-107.74504",
+        "city": "Grafton",
+        "prov": "New Mexico",
+        "inlongt": "-107.74504",
+        "altgeocode": "MINNEHOHA-UVTPI"
+      },
+      "dept": {
+        "name": "Computer Science",
+        "color": "#fff",
+        "backgroundColor": "#ffd17e",
+        "title": "Associate Professor",
+        "description": "Our faculty’s eight schools offer undergraduate, postgraduate coursework and research degrees across all disciplines",
+        "bio": "Any time scientists disagree, its because we have insufficient data. Then we can agree on what kind of data to get we get the data and the data solves the problem. Either I'm right, or you're right or we're both wrong. And we move on. That kind of conflict resolution does not exist in politics or religion. Big ideas, big ambitious projects need to be embedded within culture at a level deeper than the political winds. It needs to be deeper than the economic fluctuations that could turn people against an expensive project because they're on an unemployment line and can't feed their families. Those who see the cosmic perspective as a depressing outlook, they really need to reassess how they think about the world. Because when I look up in the universe, I know I'm small but I'm also big. I'm big because I'm connected to the universe, and the universe is connected to me. Typically, when you look for role models, you want someone who has your interests and came from the same background. Well, look how restricting that is. What people should do is take role models a la carte. If there's someone whose character you appreciated, you respect that trait."
+      },
+      "email": "glen@singularity.edu",
+      "uuid": "155e77ee-ba6d-486f-95ce-0e0c0fb4b919",
+      "picture": {
+        "large": "assets/images/8d72a358-17ae-436c-8f75-9a01127b53fd_Alajbegu,+Jim_cropped_web_BH_2019.jpg",
+        "thumbnail": "assets/images/thumbnails/8d72a358-17ae-436c-8f75-9a01127b53fd_Alajbegu,+Jim_cropped_web_BH_2019.jpg"
+      }
+    },
+    {
+      "name": {
+        "first": "dave",
+        "last": "jennings"
+      },
+      "location": {
+        "inlatt": "32.77318",
+        "distance": "0.000",
+        "timezone": "America/Chicago",
+        "elevation": "147",
+        "region": "Dallas County",
+        "name": "John Hanby Elementary School",
+        "state": "US",
+        "latt": "32.77318",
+        "longt": "-96.61166",
+        "city": "Mesquite",
+        "prov": "Texas",
+        "inlongt": "-96.61166",
+        "altgeocode": "JOHNHANBY-QQZOP"
+      },
+      "dept": {
+        "name": "Computer Science",
+        "color": "#fff",
+        "backgroundColor": "#ffd17e",
+        "title": "Associate Professor",
+        "description": "Our faculty’s eight schools offer undergraduate, postgraduate coursework and research degrees across all disciplines",
+        "bio": "Any time scientists disagree, its because we have insufficient data. Then we can agree on what kind of data to get we get the data and the data solves the problem. Either I'm right, or you're right or we're both wrong. And we move on. That kind of conflict resolution does not exist in politics or religion. Big ideas, big ambitious projects need to be embedded within culture at a level deeper than the political winds. It needs to be deeper than the economic fluctuations that could turn people against an expensive project because they're on an unemployment line and can't feed their families. Those who see the cosmic perspective as a depressing outlook, they really need to reassess how they think about the world. Because when I look up in the universe, I know I'm small but I'm also big. I'm big because I'm connected to the universe, and the universe is connected to me. Typically, when you look for role models, you want someone who has your interests and came from the same background. Well, look how restricting that is. What people should do is take role models a la carte. If there's someone whose character you appreciated, you respect that trait."
+      },
+      "email": "dave@singularity.edu",
+      "uuid": "155e77ee-ba6d-486f-95ce-0e0c0fb4b919",
+      "picture": {
+        "large": "assets/images/10f41f70-6903-4220-99a7-126f3ee807ce_Altahami,+Yunis_cropped_web_BH_2019.jpg",
+        "thumbnail": "assets/images/thumbnails/10f41f70-6903-4220-99a7-126f3ee807ce_Altahami,+Yunis_cropped_web_BH_2019.jpg"
+      }
+    },
+    {
+      "name": {
+        "first": "mark",
+        "last": "boller"
+      },
+      "location": {
+        "inlatt": "42.16516",
+        "distance": "0.000",
+        "timezone": "Asia/Bishkek",
+        "elevation": "1657",
+        "region": {},
+        "name": "Tossorchik",
+        "state": "KG",
+        "latt": "42.16516",
+        "longt": "77.40114",
+        "city": "Tossorchik",
+        "prov": "Issyk-Kul",
+        "inlongt": "77.40114",
+        "altgeocode": "TOSSORCHIK-TDUGL"
+      },
+      "dept": {
+        "name": "Computer Science",
+        "color": "#fff",
+        "backgroundColor": "#ffd17e",
+        "title": "Associate Professor",
+        "description": "Our faculty’s eight schools offer undergraduate, postgraduate coursework and research degrees across all disciplines",
+        "bio": "Any time scientists disagree, its because we have insufficient data. Then we can agree on what kind of data to get we get the data and the data solves the problem. Either I'm right, or you're right or we're both wrong. And we move on. That kind of conflict resolution does not exist in politics or religion. Big ideas, big ambitious projects need to be embedded within culture at a level deeper than the political winds. It needs to be deeper than the economic fluctuations that could turn people against an expensive project because they're on an unemployment line and can't feed their families. Those who see the cosmic perspective as a depressing outlook, they really need to reassess how they think about the world. Because when I look up in the universe, I know I'm small but I'm also big. I'm big because I'm connected to the universe, and the universe is connected to me. Typically, when you look for role models, you want someone who has your interests and came from the same background. Well, look how restricting that is. What people should do is take role models a la carte. If there's someone whose character you appreciated, you respect that trait."
+      },
+      "email": "mark@singularity.edu",
+      "uuid": "155e77ee-ba6d-486f-95ce-0e0c0fb4b919",
+      "picture": {
+        "large": "assets/images/013c30ad-f7fe-4106-8289-b9df3534160a_shawn-anderson_bh_2019.jpg",
+        "thumbnail": "assets/images/thumbnails/013c30ad-f7fe-4106-8289-b9df3534160a_shawn-anderson_bh_2019.jpg"
+      }
+    },
+    {
+      "name": {
+        "first": "al",
+        "last": "Shaw"
+      },
+      "location": {
+        "inlatt": "-41.7",
+        "distance": "0.000",
+        "timezone": "America/Argentina/Salta",
+        "elevation": "1244",
+        "region": "Departamento de Veinticinco de Mayo",
+        "state": "AR",
+        "latt": "-41.7",
+        "longt": "-69.16667",
+        "city": "Cerro Negro Feo",
+        "prov": "Rio Negro",
+        "inlongt": "-69.16667",
+        "altgeocode": "NEGROFEO-GGLUN"
+      },
+      "dept": {
+        "name": "Computer Science",
+        "color": "#fff",
+        "backgroundColor": "#ffd17e",
+        "title": "Associate Professor",
+        "description": "Our faculty’s eight schools offer undergraduate, postgraduate coursework and research degrees across all disciplines",
+        "bio": "Any time scientists disagree, its because we have insufficient data. Then we can agree on what kind of data to get we get the data and the data solves the problem. Either I'm right, or you're right or we're both wrong. And we move on. That kind of conflict resolution does not exist in politics or religion. Big ideas, big ambitious projects need to be embedded within culture at a level deeper than the political winds. It needs to be deeper than the economic fluctuations that could turn people against an expensive project because they're on an unemployment line and can't feed their families. Those who see the cosmic perspective as a depressing outlook, they really need to reassess how they think about the world. Because when I look up in the universe, I know I'm small but I'm also big. I'm big because I'm connected to the universe, and the universe is connected to me. Typically, when you look for role models, you want someone who has your interests and came from the same background. Well, look how restricting that is. What people should do is take role models a la carte. If there's someone whose character you appreciated, you respect that trait."
+      },
+      "email": "aln@singularity.edu",
+      "uuid": "155e77ee-ba6d-486f-95ce-0e0c0fb4b919",
+      "picture": {
+        "large": "assets/images/38a936c4-8a06-463e-96e3-ad1f285952ab_anderson_+anthony_cropped_web_bh_2019.jpg",
+        "thumbnail": "assets/images/thumbnails/38a936c4-8a06-463e-96e3-ad1f285952ab_anderson_+anthony_cropped_web_bh_2019.jpg"
+      }
+    },
+    {
+      "name": {
+        "first": "andy",
+        "last": "keith"
+      },
+      "location": {
+        "inlatt": "50.050793",
+        "distance": "0.000",
+        "timezone": {},
+        "elevation": "200",
+        "region": {},
+        "state": "RU",
+        "latt": "50.050793",
+        "longt": "137.87403",
+        "city": "Khrebet Daarga",
+        "prov": "Daarga",
+        "inlongt": "137.87403",
+        "altgeocode": "DAARGA-AHAAS"
+      },
+      "dept": {
+        "name": "Computer Science",
+        "color": "#fff",
+        "backgroundColor": "#ffd17e",
+        "title": "Associate Professor",
+        "description": "Our faculty’s eight schools offer undergraduate, postgraduate coursework and research degrees across all disciplines",
+        "bio": "Any time scientists disagree, its because we have insufficient data. Then we can agree on what kind of data to get we get the data and the data solves the problem. Either I'm right, or you're right or we're both wrong. And we move on. That kind of conflict resolution does not exist in politics or religion. Big ideas, big ambitious projects need to be embedded within culture at a level deeper than the political winds. It needs to be deeper than the economic fluctuations that could turn people against an expensive project because they're on an unemployment line and can't feed their families. Those who see the cosmic perspective as a depressing outlook, they really need to reassess how they think about the world. Because when I look up in the universe, I know I'm small but I'm also big. I'm big because I'm connected to the universe, and the universe is connected to me. Typically, when you look for role models, you want someone who has your interests and came from the same background. Well, look how restricting that is. What people should do is take role models a la carte. If there's someone whose character you appreciated, you respect that trait."
+      },
+      "email": "andy@singularity.edu",
+      "uuid": "155e77ee-ba6d-486f-95ce-0e0c0fb4b919",
+      "picture": {
+        "large": "assets/images/50c0916d-9369-4d73-96bd-9898c3e02ece_adams_+mike_cropped_bh_2019.jpg",
+        "thumbnail": "assets/images/thumbnails/50c0916d-9369-4d73-96bd-9898c3e02ece_adams_+mike_cropped_bh_2019.jpg"
+      }
+    },
+    {
+      "name": {
+        "first": "Phil",
+        "last": "carson"
+      },
+      "location": {
+        "inlatt": "-8.38979",
+        "distance": "0.000",
+        "timezone": "Pacific/Guadalcanal",
+        "elevation": "15",
+        "region": {},
+        "name": "Kolongongo’e",
+        "state": "SB",
+        "latt": "-8.38979",
+        "longt": "159.74118",
+        "city": "Veranaue",
+        "prov": "Guadalcanal",
+        "inlongt": "159.74118",
+        "altgeocode": "KOLONGONGO-KVKUW"
+      },
+      "dept": {
+        "name": "Humanities",
+        "color": "#fff",
+        "backgroundColor": "#ff7e7e",
+        "title": "Associate Professor",
+        "description": "Our faculty’s eight schools offer undergraduate, postgraduate coursework and research degrees across all disciplines",
+        "bio": "Any time scientists disagree, its because we have insufficient data. Then we can agree on what kind of data to get we get the data and the data solves the problem. Either I'm right, or you're right or we're both wrong. And we move on. That kind of conflict resolution does not exist in politics or religion. Big ideas, big ambitious projects need to be embedded within culture at a level deeper than the political winds. It needs to be deeper than the economic fluctuations that could turn people against an expensive project because they're on an unemployment line and can't feed their families. Those who see the cosmic perspective as a depressing outlook, they really need to reassess how they think about the world. Because when I look up in the universe, I know I'm small but I'm also big. I'm big because I'm connected to the universe, and the universe is connected to me. Typically, when you look for role models, you want someone who has your interests and came from the same background. Well, look how restricting that is. What people should do is take role models a la carte. If there's someone whose character you appreciated, you respect that trait."
+      },
+      "email": "phil@singularity.edu",
+      "uuid": "155e77ee-ba6d-486f-95ce-0e0c0fb4b919",
+      "picture": {
+        "large": "assets/images/158c3bea-f643-4b76-9d74-18aa3988e884_Anderson_+Jordan_cropped_web_BH_2020.jpg",
+        "thumbnail": "assets/images/thumbnails/158c3bea-f643-4b76-9d74-18aa3988e884_Anderson_+Jordan_cropped_web_BH_2020.jpg"
+      }
+    },
+    {
+      "name": {
+        "first": "Di",
+        "last": "Leech"
+      },
+      "location": {
+        "inlatt": "49.05784",
+        "distance": "0.000",
+        "timezone": "America/Winnipeg",
+        "elevation": "464",
+        "region": {},
+        "name": "Lyleton",
+        "state": "CA",
+        "latt": "49.05784",
+        "longt": "-101.17867",
+        "city": "Lyleton",
+        "prov": "Manitoba",
+        "inlongt": "-101.17867",
+        "altgeocode": "LYLETON-PVACL"
+      },
+      "dept": {
+        "name": "Humanities",
+        "color": "#fff",
+        "backgroundColor": "#ff7e7e",
+        "title": "Associate Professor",
+        "description": "Our faculty’s eight schools offer undergraduate, postgraduate coursework and research degrees across all disciplines",
+        "bio": "Any time scientists disagree, its because we have insufficient data. Then we can agree on what kind of data to get we get the data and the data solves the problem. Either I'm right, or you're right or we're both wrong. And we move on. That kind of conflict resolution does not exist in politics or religion. Big ideas, big ambitious projects need to be embedded within culture at a level deeper than the political winds. It needs to be deeper than the economic fluctuations that could turn people against an expensive project because they're on an unemployment line and can't feed their families. Those who see the cosmic perspective as a depressing outlook, they really need to reassess how they think about the world. Because when I look up in the universe, I know I'm small but I'm also big. I'm big because I'm connected to the universe, and the universe is connected to me. Typically, when you look for role models, you want someone who has your interests and came from the same background. Well, look how restricting that is. What people should do is take role models a la carte. If there's someone whose character you appreciated, you respect that trait."
+      },
+      "email": "di@singularity.edu",
+      "uuid": "155e77ee-ba6d-486f-95ce-0e0c0fb4b919",
+      "picture": {
+        "large": "assets/images/5af684ae-c3da-48a0-976d-f1917f90d210_Amspaugh,+Heidi_cropped_web_BH_2019.jpg",
+        "thumbnail": "assets/images/thumbnails/5af684ae-c3da-48a0-976d-f1917f90d210_Amspaugh,+Heidi_cropped_web_BH_2019.jpg"
+      }
+    },
+    {
+      "name": {
+        "first": "Ted",
+        "last": "Allen"
+      },
+      "location": {
+        "inlatt": "56.81972",
+        "distance": "0.000",
+        "timezone": "America/Edmonton",
+        "elevation": "616",
+        "region": {},
+        "state": "CA",
+        "latt": "56.81972",
+        "longt": "-114.28917",
+        "city": "Gods Lake",
+        "prov": "Alberta",
+        "inlongt": "-114.28917",
+        "altgeocode": "GODSLAKE-BURHX"
+      },
+      "dept": {
+        "name": "Architecture",
+        "color": "#fff",
+        "backgroundColor": "#48bb46",
+        "title": "Associate Professor",
+        "description": "Our faculty’s eight schools offer undergraduate, postgraduate coursework and research degrees across all disciplines",
+        "bio": "Any time scientists disagree, its because we have insufficient data. Then we can agree on what kind of data to get we get the data and the data solves the problem. Either I'm right, or you're right or we're both wrong. And we move on. That kind of conflict resolution does not exist in politics or religion. Big ideas, big ambitious projects need to be embedded within culture at a level deeper than the political winds. It needs to be deeper than the economic fluctuations that could turn people against an expensive project because they're on an unemployment line and can't feed their families. Those who see the cosmic perspective as a depressing outlook, they really need to reassess how they think about the world. Because when I look up in the universe, I know I'm small but I'm also big. I'm big because I'm connected to the universe, and the universe is connected to me. Typically, when you look for role models, you want someone who has your interests and came from the same background. Well, look how restricting that is. What people should do is take role models a la carte. If there's someone whose character you appreciated, you respect that trait."
+      },
+      "email": "ted@singularity.edu",
+      "uuid": "155e77ee-ba6d-486f-95ce-0e0c0fb4b919",
+      "picture": {
+        "large": "assets/images/e04a0ec3-1a97-4b3d-a6d0-6f632c6a4e2c_Adams_+Allan_uncropped+for+web_710x841.jpg",
+        "thumbnail": "assets/images/thumbnails/e04a0ec3-1a97-4b3d-a6d0-6f632c6a4e2c_Adams_+Allan_uncropped+for+web_710x841.jpg"
+      }
+    },
+    {
+      "name": {
+        "first": "Sascha",
+        "last": "Clark"
+      },
+      "location": {
+        "inlatt": "51.3",
+        "distance": "0.000",
+        "timezone": {},
+        "elevation": {},
+        "region": {},
+        "state": "CA",
+        "latt": "51.3",
+        "longt": "-67.566667",
+        "city": "Lac Grandmesnil",
+        "prov": "California",
+        "inlongt": "-67.566667",
+        "altgeocode": "GRANDM-XREKN"
+      },
+      "dept": {
+        "name": "Architecture",
+        "color": "#fff",
+        "backgroundColor": "#48bb46",
+        "title": "Associate Professor",
+        "description": "Our faculty’s eight schools offer undergraduate, postgraduate coursework and research degrees across all disciplines",
+        "bio": "Any time scientists disagree, its because we have insufficient data. Then we can agree on what kind of data to get we get the data and the data solves the problem. Either I'm right, or you're right or we're both wrong. And we move on. That kind of conflict resolution does not exist in politics or religion. Big ideas, big ambitious projects need to be embedded within culture at a level deeper than the political winds. It needs to be deeper than the economic fluctuations that could turn people against an expensive project because they're on an unemployment line and can't feed their families. Those who see the cosmic perspective as a depressing outlook, they really need to reassess how they think about the world. Because when I look up in the universe, I know I'm small but I'm also big. I'm big because I'm connected to the universe, and the universe is connected to me. Typically, when you look for role models, you want someone who has your interests and came from the same background. Well, look how restricting that is. What people should do is take role models a la carte. If there's someone whose character you appreciated, you respect that trait."
+      },
+      "email": "sascha@singularity.edu",
+      "uuid": "155e77ee-ba6d-486f-95ce-0e0c0fb4b919",
+      "picture": {
+        "large": "assets/images/9ab13fc4-ca95-48bb-8049-cd070ce1a302_Allen_+Amy_cropped_web_BH_2020.jpg",
+        "thumbnail": "assets/images/thumbnails/9ab13fc4-ca95-48bb-8049-cd070ce1a302_Allen_+Amy_cropped_web_BH_2020.jpg"
+      }
+    },
+    {
+      "name": {
+        "first": "Luke",
+        "last": "major"
+      },
+      "location": {
+        "inlatt": "1.566667",
+        "distance": "0.000",
+        "timezone": "Africa/Kinshasa",
+        "elevation": "362",
+        "region": {},
+        "name": "Busu-Mokodja",
+        "state": "CD",
+        "latt": "1.566667",
+        "longt": "20.8",
+        "city": "Busu-Mokodja",
+        "prov": "Mongala",
+        "inlongt": "20.8",
+        "altgeocode": "MOKODJA-JESEP"
+      },
+      "dept": {
+        "name": "Architecture",
+        "color": "#fff",
+        "backgroundColor": "#48bb46",
+        "title": "Associate Professor",
+        "description": "Our faculty’s eight schools offer undergraduate, postgraduate coursework and research degrees across all disciplines",
+        "bio": "Any time scientists disagree, its because we have insufficient data. Then we can agree on what kind of data to get we get the data and the data solves the problem. Either I'm right, or you're right or we're both wrong. And we move on. That kind of conflict resolution does not exist in politics or religion. Big ideas, big ambitious projects need to be embedded within culture at a level deeper than the political winds. It needs to be deeper than the economic fluctuations that could turn people against an expensive project because they're on an unemployment line and can't feed their families. Those who see the cosmic perspective as a depressing outlook, they really need to reassess how they think about the world. Because when I look up in the universe, I know I'm small but I'm also big. I'm big because I'm connected to the universe, and the universe is connected to me. Typically, when you look for role models, you want someone who has your interests and came from the same background. Well, look how restricting that is. What people should do is take role models a la carte. If there's someone whose character you appreciated, you respect that trait."
+      },
+      "email": "luke@singularity.edu",
+      "uuid": "155e77ee-ba6d-486f-95ce-0e0c0fb4b919",
+      "picture": {
+        "large": "assets/images/ecf0ddba-c195-406f-9b46-451782695710_Alvarez_+Leo_cropped_web_BH_2021.jpg",
+        "thumbnail": "assets/images/thumbnails/ecf0ddba-c195-406f-9b46-451782695710_Alvarez_+Leo_cropped_web_BH_2021.jpg"
+      }
+    }
+  ]
+}
