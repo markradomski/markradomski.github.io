@@ -1,1 +1,1 @@
-Personal portfolio https://markradomski.github.io/
+Developer portfolio https://markradomski.github.io/
