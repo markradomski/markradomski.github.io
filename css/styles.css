@@ -123,17 +123,16 @@ a.link-plus.navbar-logo:before {
 
 .card {
 	border-radius: 0.5rem;
-	box-shadow: 2px 2px 2px rgb(0 0 0 / 10%);
-	border: 1px solid transparent;
+	border: 1px solid #D9D0BC;
 	margin-bottom: 2rem;
 	margin-left: 0.25rem;
 	margin-right: 0.25rem;
-	transition: 0.3s ease;
+	overflow: hidden;
 }
 
 .card:hover {
-	border: 1px solid #000;
-	box-shadow: 8px 8px 1px #8f9eb2;
+	/* border: 1px solid #000; */
+	/* box-shadow: 8px 8px 1px #8f9eb2; */
 }
 
 .card-img-top {
