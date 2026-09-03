@@ -122,7 +122,7 @@ a.link-plus.navbar-logo:before {
 /* Card */
 
 .card {
-	border-radius: 0;
+	border-radius: 0.5rem;
 	box-shadow: 2px 2px 2px rgb(0 0 0 / 10%);
 	border: 1px solid transparent;
 	margin-bottom: 2rem;
