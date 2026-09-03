@@ -137,7 +137,7 @@ a.link-plus.navbar-logo:before {
 }
 
 .card-img-top {
-	border-radius: 0px;
+	border-radius: 0.5rem 0.5rem 0 0;
 }
 
 .card-body {}
