@@ -27,13 +27,16 @@ p {
 .link,
 .link:hover {
 	text-decoration: none;
+
+
 }
 
 a.link-plus {
-	color: #000000;
+	color: #818CF8;
 	text-decoration: none;
-	border-bottom: 2px solid #8f9eb2;
+	border-bottom: 2px solid #DFE7FF;
 	position: relative;
+	
 }
 
 a.link-plus:before {
@@ -43,7 +46,7 @@ a.link-plus:before {
 	height: 2px;
 	bottom: -2px;
 	left: 0;
-	background-color: #000000;
+	background-color: #818CF8;
 	visibility: hidden;
 	-webkit-transform: scaleX(0);
 	transform: scaleX(0);
@@ -57,13 +60,17 @@ a.link-plus:hover:before {
 	transform: scaleX(1);
 }
 
+a.link-plus.active {
+	border-bottom: 2px solid #818CF8;
+}
+
 /* Navbar */
 
 .navbar-logo {
 }
 
 a.link-plus.navbar-logo {
-	border-bottom: 3px solid #8f9eb2;
+	border-bottom: 3px solid #DFE7FF;
 }
 
 a.link-plus.navbar-logo:before {
@@ -73,6 +80,14 @@ a.link-plus.navbar-logo:before {
 
 .nav-link {
 	font-size: 1.3rem;
+}
+.nav-link:hover {
+	color: #818CF8;
+}
+
+.nav-item .link {
+	margin-right: 20px;
+	margin-top: 18px;
 }
 
 /* Page */
