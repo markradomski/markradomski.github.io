@@ -168,7 +168,9 @@ a.link-plus.navbar-logo:before {
   margin-left: 0.25rem;
   margin-right: 0.25rem;
   overflow: hidden;
-  transition: box-shadow 0.2s, transform 0.2s;
+  transition:
+    box-shadow 0.2s,
+    transform 0.2s;
 }
 
 .card:hover {
@@ -233,41 +235,13 @@ a.link-plus.navbar-logo:before {
   margin-bottom: 0.2rem;
 }
 
-/* ============================================================================
-   EMBEDDED DEMOS
-   ============================================================================ */
-/* Full-width, generously-tall live-app embed (e.g. Pollywaffle) — not a
-   fixed aspect ratio like Bootstrap's .ratio utility, since the embedded
-   app is a tall, vertically-scrolling page rather than a video. */
-/* Breaks out of the centered .container's narrow content column to render
-   near-full-viewport-width, regardless of how narrow the surrounding prose
-   column is — the standard viewport-breakout technique: `left: 50%` shifts
-   by half the *containing block's* width, then `margin-left`/`-right`
-   (viewport-relative lengths, not percentages, so unaffected by the
-   containing block) pull it back by half the *viewport* width plus the
-   desired 30px gutter, landing it centred on the viewport with 30px to
-   spare on each side. */
 .pollywaffle-embed {
-  position: relative;
-  left: 50%;
-  right: 50%;
-  width: calc(100vw - 60px);
-  max-width: none;
-  margin-left: calc(-50vw + 30px);
-  margin-right: calc(-50vw + 30px);
-  height: 1100px;
+  width: 100%;
 }
 
 .pollywaffle-embed iframe {
   display: block;
   width: 100%;
-  height: 100%;
+  height: 1100px;
   border: 0;
-}
-
-@media (max-width: 576px) {
-  .pollywaffle-embed {
-    height: 70vh;
-    min-height: 480px;
-  }
 }

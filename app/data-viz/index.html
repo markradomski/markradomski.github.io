@@ -13,7 +13,7 @@
     />
     <title>Mark Radomski</title>
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/styles.css?v=embed-fix-1" />
   </head>
 
   <body>
@@ -31,195 +31,122 @@
         </div>
       </nav>
     </header>
+
     <main role="main" class="container">
       <div class="row flex-column">
         <div class="page-header">
-          <h1 class="page-title">Pollywaffle</h1>
+          <h1 class="page-title">Smashed Avo Property Price Index</h1>
           <h2 class="page-subtitle">
-            Smashed Avocado on Toast Property Price Index
+            Australian Federal Politician property ownership
           </h2>
         </div>
+
         <div class="page-content">
-          <!-- Intro -->
-          <div class="page-block">
-            <div class="row">
-              <div class="col-lg-9">
-                <p>
-                  What began as an old VizSweet experiment has been rebuilt from
-                  scratch as an independent, reusable data visualisation engine.
-                </p>
+          <div class="row">
+            <div class="col mb-4 mb-lg-0 me-lg-5">
+              <div class="page-block">
                 <p>
                   Pollywaffle visualises Australian federal politicians' 2025
                   property declarations through the apparently immortal idea
                   that smashed avocado is what's standing between young
-                  Australians and home ownership.
+                  Australians and home ownership. Each politician becomes a
+                  balloon &mdash; vertical position for years of smashed avo,
+                  size for declared property count, colour for political party.
                 </p>
-                <p class="mb-2">Each politician becomes a balloon:</p>
-                <ul>
-                  <li>vertical position = years of smashed avo</li>
-                  <li>size = declared property count</li>
-                  <li>colour = political party</li>
-                </ul>
-              </div>
-            </div>
-          </div>
 
-          <!-- Live demo -->
-          <div class="page-block">
-            <div class="pollywaffle-embed">
-              <iframe
-                src="/app/data-viz/pollywaffle/?embed=1"
-                title="Pollywaffle — live interactive demo"
-                loading="lazy"
-              ></iframe>
-            </div>
-          </div>
-
-          <!-- Live demo link + hero chart -->
-          <div class="page-block">
-            <p class="fs-4 mb-3">
-              <a
-                class="link-plus"
-                href="https://markradomski.github.io/app/data-viz/pollywaffle/"
-                target="_blank"
-                rel="noreferrer"
-                >Launch Pollywaffle &#8599;</a
-              >
-            </p>
-            <img
-              class="img-fluid rounded"
-              src="images/pollywaffle/chart.png"
-              alt="Pollywaffle balloon chart showing Australian federal politicians grouped by declared property years"
-            />
-            <figcaption class="caption">
-              Force-directed balloon chart &mdash; size is declared property
-              count, colour is party
-            </figcaption>
-          </div>
-
-          <!-- Project / process -->
-          <div class="page-block">
-            <h2 class="page-block-title">Project &amp; process</h2>
-            <div class="row">
-              <div class="col-lg-9">
-                <ul>
-                  <li>clean-room recreation of the Balloon Race visualisation concept</li>
-                  <li>reusable React + TypeScript + D3 visualisation engine</li>
-                  <li>deterministic responsive circle packing</li>
-                  <li>interactive balloon expansion and detailed metadata</li>
-                  <li>filtering by political party and property type</li>
-                  <li>runtime validation and dataset adapters</li>
-                  <li>updated 2025 parliamentary property-declaration data</li>
-                  <li>source/provenance links back to official parliamentary records</li>
-                </ul>
                 <p>
                   Balloon Race is the generic engine; Pollywaffle is one
-                  dataset/application built on top of it &mdash; the same
-                  engine also powers a Snake Oil reference visualisation
-                  (nutritional supplement evidence) used to validate it
-                  independently of Pollywaffle's own data.
+                  dataset/application built on top of it &mdash; the same engine
+                  also powers a Snake Oil reference visualisation (nutritional
+                  supplement evidence) used to validate it independently of
+                  Pollywaffle's own data.
                 </p>
-              </div>
-            </div>
-          </div>
 
-          <!-- Data / methodology -->
-          <div class="page-block">
-            <h2 class="page-block-title">Data &amp; methodology</h2>
-            <div class="row">
-              <div class="col-lg-9">
                 <p>
                   The property data comes from 2025 federal parliamentary
-                  declarations compiled by
+                  declarations compiled by Guardian Australia. Declared property
+                  counts convert into a deliberately simplified property-value
+                  estimate, then into "years of smashed avo" using an assumed
+                  $22 caf&eacute; price &mdash; a satirical affordability index,
+                  not an estimate of any politician's actual property portfolio
+                  value.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-auto">
+              <div class="tech-details">
+                <p class="label">Tech</p>
+                <p class="text-muted">
+                  React, TypeScript, D3,<br />
+                  SVG, Vite, Zod, Vitest, React Testing Library
+                </p>
+              </div>
+
+              <div class="link-details">
+                <p class="label">Links</p>
+
+                <p class="link">
                   <a
-                    href="https://www.theguardian.com/australia-news/2025/sep/03/australian-politicians-reveal-their-housing-portfolios-with-some-owning-as-many-as-six-homes"
+                    href="https://markradomski.github.io/app/data-viz/pollywaffle/"
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
                     class="link-plus"
-                    >Guardian Australia</a
-                  >.
+                  >
+                    launch pollywaffle
+                  </a>
                 </p>
-                <p>
-                  The visualisation converts declared property counts into a
-                  deliberately simplified property-value estimate using a
-                  national median dwelling value, then converts that figure
-                  into "years of smashed avo" using an assumed $22 caf&eacute;
-                  price.
-                </p>
-                <p>
-                  This is a satirical affordability index, not an estimate of
-                  each politician's actual property portfolio value.
+
+                <p class="link">
+                  <a
+                    href="https://github.com/markradomski/balloon-race"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="link-plus"
+                  >
+                    github repo
+                  </a>
                 </p>
               </div>
             </div>
           </div>
 
-          <!-- Tech -->
-          <div class="page-block">
-            <h2 class="page-block-title">Tech</h2>
-            <div class="tech-details">
-              <p class="text-muted">
-                React, TypeScript, D3, SVG, Vite, Zod, Vitest, React Testing
-                Library
-              </p>
-            </div>
-          </div>
-
-          <!-- Screenshots -->
-          <div class="page-block">
-            <h2 class="page-block-title">Selected views</h2>
-            <div class="row">
-              <div class="col-12 col-md-6 mb-4 mb-md-0">
-                <img
-                  class="img-fluid rounded"
-                  src="images/pollywaffle/filters.png"
-                  alt="Pollywaffle filter panel with property type and political party options"
-                />
-                <figcaption class="caption">
-                  Filtering by property type and political party
-                </figcaption>
-              </div>
-              <div class="col-12 col-md-6">
-                <img
-                  class="img-fluid rounded"
-                  src="images/pollywaffle/expanded.png"
-                  alt="An expanded Pollywaffle balloon showing a politician's detail and a link to their official register of interests"
-                />
-                <figcaption class="caption">
-                  Expanded balloon &mdash; detail, provenance, and a link to
-                  the official register
-                </figcaption>
-              </div>
-            </div>
-          </div>
-
-          <!-- Links -->
-          <div class="page-block">
-            <h2 class="page-block-title">Links</h2>
-            <div class="link-details">
-              <p class="link">
-                <a
-                  class="link-plus"
-                  href="https://markradomski.github.io/app/data-viz/pollywaffle/"
-                  target="_blank"
-                  rel="noreferrer"
-                  >Launch Pollywaffle</a
-                >
-              </p>
-              <p class="link">
-                <a
-                  class="link-plus"
-                  href="https://github.com/markradomski/balloon-race"
-                  target="_blank"
-                  rel="noreferrer"
-                  >GitHub repository</a
-                >
-              </p>
+          <div class="page-block mt-5">
+            <div class="pollywaffle-embed">
+              <iframe
+                id="pollywaffle-iframe"
+                src="/app/data-viz/pollywaffle/?embed=1"
+                title="Pollywaffle — live interactive demo"
+                scrolling="no"
+              ></iframe>
             </div>
           </div>
         </div>
       </div>
     </main>
-    <!-- content container -->
+    <script>
+      (function () {
+        var iframe = document.getElementById("pollywaffle-iframe");
+
+        function resize() {
+          try {
+            var doc = iframe.contentWindow.document;
+            iframe.style.height = doc.documentElement.scrollHeight + "px";
+          } catch (e) {
+            // cross-origin fallback: leave the CSS default height in place
+          }
+        }
+
+        iframe.addEventListener("load", function () {
+          resize();
+          try {
+            var ro = new ResizeObserver(resize);
+            ro.observe(iframe.contentWindow.document.documentElement);
+          } catch (e) {}
+        });
+
+        window.addEventListener("resize", resize);
+      })();
+    </script>
   </body>
 </html>
