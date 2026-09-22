@@ -36,9 +36,7 @@
       <div class="row flex-column">
         <div class="page-header">
           <h1 class="page-title">Smashed Avo Property Price Index</h1>
-          <h2 class="page-subtitle">
-            Australian Federal Politician property ownership
-          </h2>
+          <h2 class="page-subtitle">Pollywaffle data viz engine</h2>
         </div>
 
         <div class="page-content">
@@ -47,11 +45,16 @@
               <div class="page-block">
                 <p>
                   Pollywaffle visualises Australian federal politicians' 2025
-                  property declarations through the apparently immortal idea
-                  that smashed avocado is what's standing between young
-                  Australians and home ownership. Each politician becomes a
-                  balloon &mdash; vertical position for years of smashed avo,
-                  size for declared property count, colour for political party.
+                  property declarations through the Boomer logic that smashed
+                  avocado is what's standing between young Australians and home
+                  ownership.
+                </p>
+                <p>
+                  This visualisation has mapped out how many years of breakfasts
+                  you would have to give up to afford the same number of
+                  properties as various Politicians - based on a median house
+                  price of $848,858 AUD and eating $22 avo on toast
+                  EVERY.SINGLE.DAY.
                 </p>
 
                 <p>
@@ -60,16 +63,6 @@
                   also powers a Snake Oil reference visualisation (nutritional
                   supplement evidence) used to validate it independently of
                   Pollywaffle's own data.
-                </p>
-
-                <p>
-                  The property data comes from 2025 federal parliamentary
-                  declarations compiled by Guardian Australia. Declared property
-                  counts convert into a deliberately simplified property-value
-                  estimate, then into "years of smashed avo" using an assumed
-                  $22 caf&eacute; price &mdash; a satirical affordability index,
-                  not an estimate of any politician's actual property portfolio
-                  value.
                 </p>
               </div>
             </div>
@@ -85,17 +78,6 @@
 
               <div class="link-details">
                 <p class="label">Links</p>
-
-                <p class="link">
-                  <a
-                    href="https://markradomski.github.io/app/data-viz/pollywaffle/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="link-plus"
-                  >
-                    launch pollywaffle
-                  </a>
-                </p>
 
                 <p class="link">
                   <a
@@ -115,7 +97,7 @@
             <div class="pollywaffle-embed">
               <iframe
                 id="pollywaffle-iframe"
-                src="/app/data-viz/pollywaffle/?embed=1"
+                src="/app/data-viz/pollywaffle/?embed=1&v=labels-7"
                 title="Pollywaffle — live interactive demo"
                 scrolling="no"
               ></iframe>
@@ -131,21 +113,33 @@
         function resize() {
           try {
             var doc = iframe.contentWindow.document;
-            iframe.style.height = doc.documentElement.scrollHeight + "px";
+            var height = Math.max(doc.documentElement.scrollHeight, doc.body.scrollHeight);
+            iframe.style.height = height + "px";
           } catch (e) {
             // cross-origin fallback: leave the CSS default height in place
           }
         }
 
-        iframe.addEventListener("load", function () {
+        // The chart's own height depends on its container's measured width
+        // (a ResizeObserver inside the iframe), so it can still change one
+        // frame after "load" or after an outer resize — a follow-up check
+        // catches that instead of occasionally freezing on a too-short
+        // height from before the chart's layout settled.
+        function resizeSoon() {
           resize();
+          requestAnimationFrame(resize);
+          setTimeout(resize, 300);
+        }
+
+        iframe.addEventListener("load", function () {
+          resizeSoon();
           try {
-            var ro = new ResizeObserver(resize);
+            var ro = new ResizeObserver(resizeSoon);
             ro.observe(iframe.contentWindow.document.documentElement);
           } catch (e) {}
         });
 
-        window.addEventListener("resize", resize);
+        window.addEventListener("resize", resizeSoon);
       })();
     </script>
   </body>
