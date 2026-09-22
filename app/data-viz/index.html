@@ -81,7 +81,7 @@
 
                 <p class="link">
                   <a
-                    href="https://github.com/markradomski/balloon-race"
+                    href="https://github.com/markradomski/pollywaffle-public"
                     target="_blank"
                     rel="noopener noreferrer"
                     class="link-plus"
@@ -113,7 +113,10 @@
         function resize() {
           try {
             var doc = iframe.contentWindow.document;
-            var height = Math.max(doc.documentElement.scrollHeight, doc.body.scrollHeight);
+            var height = Math.max(
+              doc.documentElement.scrollHeight,
+              doc.body.scrollHeight,
+            );
             iframe.style.height = height + "px";
           } catch (e) {
             // cross-origin fallback: leave the CSS default height in place
