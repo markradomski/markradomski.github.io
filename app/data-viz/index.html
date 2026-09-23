@@ -45,9 +45,9 @@
               <div class="page-block">
                 <p>
                   Pollywaffle visualises Australian federal politicians' 2025
-                  property declarations through the Boomer logic that smashed
-                  avocado is what's standing between young Australians and home
-                  ownership.
+                  property declarations through the foolproof logic that smashed
+                  avo on toast is what's standing between young (and not so)
+                  Australians and home ownership.
                 </p>
                 <p>
                   This visualisation has mapped out how many years of breakfasts
@@ -55,14 +55,6 @@
                   properties as various Politicians - based on a median house
                   price of $848,858 AUD and eating $22 avo on toast
                   EVERY.SINGLE.DAY.
-                </p>
-
-                <p>
-                  Balloon Race is the generic engine; Pollywaffle is one
-                  dataset/application built on top of it &mdash; the same engine
-                  also powers a Snake Oil reference visualisation (nutritional
-                  supplement evidence) used to validate it independently of
-                  Pollywaffle's own data.
                 </p>
               </div>
             </div>
@@ -97,7 +89,7 @@
             <div class="pollywaffle-embed">
               <iframe
                 id="pollywaffle-iframe"
-                src="/app/data-viz/pollywaffle/?embed=1&v=labels-8"
+                src="/app/data-viz/pollywaffle/?embed=1&v=resize-postmessage-1"
                 title="Pollywaffle — live interactive demo"
                 scrolling="no"
               ></iframe>
@@ -110,39 +102,34 @@
       (function () {
         var iframe = document.getElementById("pollywaffle-iframe");
 
-        function resize() {
-          try {
-            var doc = iframe.contentWindow.document;
-            var height = Math.max(
-              doc.documentElement.scrollHeight,
-              doc.body.scrollHeight,
-            );
-            iframe.style.height = height + "px";
-          } catch (e) {
-            // cross-origin fallback: leave the CSS default height in place
-          }
-        }
-
-        // The chart's own height depends on its container's measured width
-        // (a ResizeObserver inside the iframe), so it can still change one
-        // frame after "load" or after an outer resize — a follow-up check
-        // catches that instead of occasionally freezing on a too-short
-        // height from before the chart's layout settled.
-        function resizeSoon() {
-          resize();
-          requestAnimationFrame(resize);
-          setTimeout(resize, 300);
-        }
-
-        iframe.addEventListener("load", function () {
-          resizeSoon();
-          try {
-            var ro = new ResizeObserver(resizeSoon);
-            ro.observe(iframe.contentWindow.document.documentElement);
-          } catch (e) {}
+        // Primary path: the embedded app measures its own rendered height
+        // (fonts, filters, layout settling — all internal to it) and
+        // reports it via postMessage. Same-document reads of the iframe's
+        // scrollHeight can't be trusted for that — the height depends on
+        // state this page has no visibility into.
+        window.addEventListener("message", function (event) {
+          if (event.origin !== window.location.origin) return;
+          if (event.source !== iframe.contentWindow) return;
+          var data = event.data;
+          if (!data || data.type !== "pollywaffle:resize") return;
+          var height = data.height;
+          if (typeof height !== "number" || !isFinite(height) || height <= 0) return;
+          iframe.style.height = Math.ceil(height) + "px";
         });
 
-        window.addEventListener("resize", resizeSoon);
+        // Fallback for an older build that doesn't post a resize message
+        // yet: one same-document measurement on load. Never retried on a
+        // timer or observer — the CSS min-height covers the gap until
+        // either this or the real postMessage report lands.
+        iframe.addEventListener("load", function () {
+          try {
+            var doc = iframe.contentWindow.document;
+            var height = Math.max(doc.documentElement.scrollHeight, doc.body.scrollHeight);
+            iframe.style.height = height + "px";
+          } catch (e) {
+            // cross-origin fallback: leave the CSS min-height in place
+          }
+        });
       })();
     </script>
   </body>
