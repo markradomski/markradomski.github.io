@@ -229,6 +229,17 @@ a.link-plus.navbar-logo:before {
 .tech-details > p,
 .link-details > p {
   margin-bottom: 0;
+  overflow-wrap: break-word;
+}
+
+/* The project page sidebar (Tech/Links) sits in a Bootstrap .col-lg-auto,
+   which sizes to its content's natural width rather than wrapping — a long
+   tech stack line then pushes the column far wider than it should ever be. */
+@media (min-width: 992px) {
+  .page-content .col-lg-auto {
+    flex: 0 1 25%;
+    max-width: 25%;
+  }
 }
 
 .link-details .link {
