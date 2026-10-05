@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="A React and TypeScript maths-practice interface exploring deterministic scaffolding, progressive help and evaluated model-backed explanations."
+    />
+    <title>Stepwise — Adaptive maths-practice prototype</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-logo link-plus h3" href="/">MR</a>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <p class="link">
+                <a class="link-plus" href="/about.html">About</a>
+              </p>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main role="main" class="container">
+      <div class="row flex-column">
+        <div class="page-header">
+          <h1 class="page-title">Stepwise</h1>
+          <h2 class="page-subtitle">Adaptive maths-practice prototype</h2>
+        </div>
+
+        <div class="page-content">
+          <div class="row">
+            <div class="col mb-4 mb-lg-0 me-lg-5">
+              <div class="page-block">
+                <h3 class="page-block-title">Overview</h3>
+                <p>
+                  Adaptive maths practice that reveals the right amount of help
+                  at the right time. Learners solve linear equations one line
+                  at a time. Stepwise reacts to the state of their working and
+                  shows only the support that is useful at that moment.
+                </p>
+                <p>
+                  It is a React and TypeScript prototype with three questions.
+                  It explores how a learning interface can hold rich internal
+                  state while keeping the learner's screen calm.
+                </p>
+
+                <h3 class="page-block-title">The problem</h3>
+                <p>
+                  A learning system can know a great deal: whether a step is
+                  correct, which path the learner took, which misconception
+                  they showed, how much help they used, and an estimate of
+                  mastery. Showing all of that creates noise.
+                </p>
+                <p>
+                  The design question was how much of the system's knowledge
+                  the learner actually needs to see. The working principle:
+                  <em>the system can know more than the learner needs to
+                  see.</em>
+                </p>
+
+                <h3 class="page-block-title">The interaction model</h3>
+                <p>
+                  The working reads as one continuous piece of mathematics, not
+                  a stack of UI cards: the given equation, the learner's
+                  accepted lines, any rejected or unrecognised attempt, a
+                  clearly labelled suggested next step, the current input and,
+                  finally, question completion. A solved question keeps its
+                  working on screen and replaces the input with one next
+                  action.
+                </p>
+                <figure class="mb-4">
+                  <img
+                    src="/images/stepwise-misconception-help.jpg"
+                    class="img-fluid rounded col-12 col-md-8"
+                    alt="Stepwise showing the given equation, a rejected attempt marked Needs attention with feedback, the input, and an open help surface containing a worked example"
+                  />
+                  <figcaption class="caption">
+                    A recognised misconception, with the Help surface open
+                  </figcaption>
+                </figure>
+
+                <h3 class="page-block-title">Progressive help</h3>
+                <p>
+                  Help is exposed in deliberate steps: a generic Prompt, a
+                  Hint specific to a recognised misconception, an Example on a
+                  different expression, and finally a Suggested next step that
+                  enters the working. Only one forward action is visible at a
+                  time. Repeated difficulty changes which help becomes
+                  available but never pushes more onto the screen by itself.
+                  Help already seen can be reopened, and instructions for using
+                  the interface are kept separate from maths help.
+                </p>
+
+                <h3 class="page-block-title">Unrecognised does not mean wrong</h3>
+                <p>
+                  Stepwise separates a recognised misconception from an
+                  expression it simply cannot classify. For the second case the
+                  interface says, in substance, "I can't quite match that step
+                  yet" instead of declaring it incorrect. Equivalent input is
+                  handled too: <code>2x = 17 - 5</code> can be canonicalised
+                  internally to <code>2x = 12</code> while the working keeps
+                  what the learner actually wrote.
+                </p>
+
+                <h3 class="page-block-title">Progress versus mastery</h3>
+                <p>
+                  The learner sees plain progress: Question 1 of 3. Separately,
+                  Stepwise keeps richer session state and an illustrative
+                  mastery estimate that only appears in a developer inspector.
+                  That estimate is a prototype signal, not a validated
+                  assessment model. The point is the distinction between task
+                  progress and internal learning-state estimation.
+                </p>
+
+                <h3 class="page-block-title">Accessibility and responsive UI</h3>
+                <p>
+                  The flow is keyboard-first, with deliberate focus handling
+                  after a step is submitted and when a question completes, so
+                  one Enter press does not skip the completion state. Status is
+                  never conveyed by colour alone, controls are semantic buttons,
+                  help and explanation text use polite live regions, and the
+                  DOM follows reading order. The layout was checked at about
+                  390px with touch targets of at least 44px and no horizontal
+                  overflow. It has not been tested with screen readers.
+                </p>
+
+                <h3 class="page-block-title">Where the model fits</h3>
+                <p>
+                  The model never decides correctness, misconceptions,
+                  progression, completion or mastery; those stay deterministic.
+                  An optional <em>Explain this</em> action can reword a
+                  judgement Stepwise has already made. AI may explain the
+                  system's judgement; it does not make the judgement.
+                </p>
+                <figure class="mb-4">
+                  <img
+                    src="/images/stepwise-suggested-step.jpg"
+                    class="img-fluid rounded"
+                    alt="A suggested next step in the working with an open Explain this surface giving a short explanation of why the step works"
+                  />
+                  <figcaption class="caption">
+                    A suggested next step with an inline explanation
+                  </figcaption>
+                </figure>
+                <figure class="mb-4">
+                  <pre class="border rounded p-3 bg-white overflow-auto">Deterministic maths state
+  &darr;
+Explanation target
+  &darr;
+Routing policy
+  &boxvr;&boxh; Deterministic explanation
+  &boxur;&boxh; Model explanation
+        &darr;
+Server-side versioned prompt
+        &darr;
+Untrusted structured output
+        &darr;
+Validation (server and browser)
+  &darr;
+Display-only explanation</pre>
+                  <figcaption class="caption">
+                    The model boundary. Any failure falls back to the
+                    deterministic explanation.
+                  </figcaption>
+                </figure>
+                <p>
+                  The browser sends only a narrow structured request, never a
+                  prompt. The prompt is built on the server and versioned, the
+                  API key stays server-side, the response is a fixed schema
+                  with no fields for correctness or progress, and it is
+                  validated before display. Timeouts, rate limiting, request
+                  de-duplication and a small bounded cache sit behind it.
+                </p>
+
+                <h3 class="page-block-title">Model evaluation</h3>
+                <p>
+                  I compared model explanations with the deterministic ones on
+                  a 12-case corpus (11 supported cases) using Claude Haiku 4.5
+                  and the first prompt version (<code>explanation-prompt/1</code>).
+                </p>
+                <table class="table table-sm w-auto mb-3">
+                  <caption class="caption">
+                    Reviewed result, prompt V1, 11 supported cases
+                  </caption>
+                  <thead>
+                    <tr>
+                      <th scope="col">Compared with deterministic</th>
+                      <th scope="col">Cases</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Better</th>
+                      <td>2</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Same</th>
+                      <td>5</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Worse</th>
+                      <td>4</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="border rounded p-3 mb-4">
+                  <p class="mb-0">
+                    <strong>Caveat:</strong> these Better / Same / Worse
+                    judgements were made by an AI assistant and have not yet
+                    been independently validated by a human. The sample is
+                    small, so treat the result as evidence-informed, not
+                    conclusive.
+                  </p>
+                </div>
+                <p>
+                  The model was not universally better. It added the clearest
+                  value when explaining <em>why</em> a suggested next step
+                  works. For most other targets the deterministic explanation
+                  was equal or better, and model calls took about two seconds
+                  against effectively none for deterministic text. Routing
+                  therefore uses the model first only for the Suggested next
+                  step, with deterministic fallback; misconceptions, hints,
+                  examples and accepted steps stay deterministic.
+                </p>
+                <figure class="mb-4">
+                  <img
+                    src="/images/stepwise-inspector.jpg"
+                    class="img-fluid rounded"
+                    alt="Stepwise with the developer inspector open, showing assistance, explanation provider, routing and a timeout fallback to the deterministic provider"
+                  />
+                  <figcaption class="caption">
+                    The developer inspector: a model timeout falling back to
+                    the deterministic explanation
+                  </figcaption>
+                </figure>
+
+                <h3 class="page-block-title">Prompt V2</h3>
+                <p>
+                  A second prompt was tested after V1 put future-step
+                  information in an optional output field the interface does
+                  not display. V2 removed that, but it also removed the
+                  explanatory behaviour that made V1 useful and caused other
+                  regressions. It was evaluated and rejected; V1 stays active
+                  rather than assuming the newer prompt was better.
+                </p>
+
+                <h3 class="page-block-title">What the model got wrong</h3>
+                <ul>
+                  <li>
+                    A negative-sign reasoning error in a bracket explanation.
+                  </li>
+                  <li>A generic explanation of an arithmetic error.</li>
+                  <li>
+                    It ignored the learner's equivalent expression
+                    (<code>2x = 17 - 5</code>).
+                  </li>
+                  <li>
+                    Future-step leakage in optional output (V1), which V2 fixed
+                    only by regressing elsewhere.
+                  </li>
+                </ul>
+
+                <h3 class="page-block-title">Outcome</h3>
+                <p>
+                  A working learner experience, deterministic learning state,
+                  progressive assistance, responsive and accessible UI, a
+                  constrained model boundary, a real model evaluation and
+                  evidence-driven routing, deployed publicly. It is a
+                  prototype: no learner studies, an illustrative mastery
+                  estimate, and a lightweight public endpoint.
+                </p>
+                <p class="link">
+                  <a
+                    href="https://stepwise.mrad-a17.workers.dev/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="link-plus"
+                    >View live demo</a
+                  >
+                  &nbsp;&nbsp;
+                  <a
+                    href="https://github.com/markradomski/stepwise"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="link-plus"
+                    >View source</a
+                  >
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-auto">
+              <div class="tech-details">
+                <p class="label">Tech</p>
+                <p class="text-muted">
+                  React, TypeScript, Vite, CSS Modules, Vitest, Cloudflare
+                  Workers, Claude API
+                </p>
+              </div>
+
+              <div class="link-details">
+                <p class="label">Links</p>
+
+                <p class="link">
+                  <a
+                    href="https://stepwise.mrad-a17.workers.dev/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="link-plus"
+                  >
+                    View live demo
+                  </a>
+                </p>
+
+                <p class="link">
+                  <a
+                    href="https://github.com/markradomski/stepwise"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="link-plus"
+                  >
+                    github repo
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
