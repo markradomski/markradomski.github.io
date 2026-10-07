@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Sun Arise — interactive geospatial sunlight and site analysis on real-world terrain, built with React, TypeScript and CesiumJS"
+    />
+    <title>Sun Arise — Mark Radomski</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-logo link-plus h3" href="/">MR</a>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <p class="link">
+                <a class="link-plus" href="/about.html">About</a>
+              </p>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main role="main" class="container">
+      <div class="row flex-column">
+        <div class="page-header">
+          <h1 class="page-title">Sun Arise</h1>
+          <h2 class="page-subtitle">
+            Interactive geospatial sunlight and site analysis
+          </h2>
+        </div>
+
+        <div class="page-content">
+          <div class="row">
+            <div class="col mb-4 mb-lg-0 me-lg-5">
+              <div class="page-block">
+                <p>
+                  Explore how building placement, orientation, terrain, season
+                  and time affect direct sunlight across a real-world site.
+                </p>
+                <p>
+                  Sun Arise combines interactive 3D mapping with an independent
+                  solar-analysis engine. Buildings can be positioned and rotated
+                  on real-world terrain while the application models direct
+                  sunlight through time. Now mode synchronises an analytical
+                  sunlight field with animated 3D shadows, while Whole day mode
+                  calculates accumulated direct-sun exposure across the site.
+                </p>
+
+                <h3 class="page-block-title">Analysis</h3>
+                <p>
+                  The solar engine is deliberately independent of the renderer.
+                  Sun position and shadow occlusion are computed geometrically
+                  against building volumes rather than read back from the
+                  rendered scene, so the drawn shadows and the analysis are two
+                  systems that agree rather than one derived from the other.
+                </p>
+                <p>
+                  Ground samples are taken across a two-metre grid and placed on
+                  sampled terrain heights, so the analysis follows the real
+                  surface rather than a flat plane. Now mode evaluates that grid
+                  against a single sun position and tracks the clock; Whole day
+                  mode accumulates direct sun across the civil day on a fixed
+                  hourly scale, so seasons stay comparable instead of being
+                  normalised against each other.
+                </p>
+                <p>
+                  Any point can be inspected exactly rather than by its nearest
+                  grid cell, reporting its sun and shade intervals and how the
+                  same spot compares across summer, equinox and winter. A
+                  placement can be saved and the building moved, with the two
+                  positions measured over the same ground. Dates and times are
+                  handled as civil time at the site, including daylight saving,
+                  separately from the astronomical calculations.
+                </p>
+                <p>
+                  Now mode reports whether a point has a clear line to the sun
+                  and how high the sun is. It shows relative sunlight strength,
+                  not irradiance: there is no validated atmospheric model
+                  behind it, so no energy figures are claimed.
+                </p>
+
+                <h3 class="page-block-title">Build</h3>
+                <p>
+                  React and TypeScript over CesiumJS, with Cesium World Terrain
+                  and satellite imagery. Scene state is held in a store and
+                  reconciled into the globe by key, keeping the renderer and the
+                  application model separate. The solar engine is pure
+                  TypeScript with no Cesium or UI dependencies, which is what
+                  makes it directly testable under Vitest.
+                </p>
+                <p class="link">
+                  <a
+                    href="https://sun-arise.netlify.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="link-plus"
+                    >View live demo</a
+                  >
+                  &nbsp;&nbsp;
+                  <a
+                    href="https://github.com/markradomski/sun-arise"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="link-plus"
+                    >View source</a
+                  >
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-auto">
+              <div class="tech-details">
+                <p class="label">Tech</p>
+                <p class="text-muted">
+                  React, TypeScript, CesiumJS, Vite, Vitest
+                </p>
+              </div>
+
+              <div class="link-details">
+                <p class="label">Links</p>
+
+                <p class="link">
+                  <a
+                    href="https://sun-arise.netlify.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="link-plus"
+                  >
+                    View live demo
+                  </a>
+                </p>
+
+                <p class="link">
+                  <a
+                    href="https://github.com/markradomski/sun-arise"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="link-plus"
+                  >
+                    github repo
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="page-block mt-5">
+            <div class="row">
+              <div class="col-12 col-md-6 mb-4">
+                <img
+                  src="/images/sun-arise-now.jpg"
+                  class="img-fluid rounded"
+                  alt="Now mode: the sunlight map at 14:15 with the building's shadow across the site"
+                />
+                <p class="caption">Now — direct sunlight at a moment in time</p>
+              </div>
+              <div class="col-12 col-md-6 mb-4">
+                <img
+                  src="/images/sun-arise-whole-day.jpg"
+                  class="img-fluid rounded"
+                  alt="Whole day mode: accumulated hours of direct sun across the site, with the shaded band beside the building"
+                />
+                <p class="caption">
+                  Whole day — accumulated hours of direct sun
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
