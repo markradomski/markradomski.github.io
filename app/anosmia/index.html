@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Anosmia — a wine-tasting PWA built around physical sensation instead of aroma, by Mark Radomski."
+    />
+    <title>Anosmia — Mark Radomski</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-logo link-plus h3" href="/">MR</a>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <p class="link">
+                <a class="link-plus" href="/about.html">About</a>
+              </p>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main role="main" class="container">
+      <div class="row flex-column">
+        <div class="page-header">
+          <h1 class="page-title">Anosmia</h1>
+          <h2 class="page-subtitle">Sensory learning / React, TypeScript, PWA</h2>
+        </div>
+
+        <div class="page-content">
+          <div class="row">
+            <div class="col mb-4 mb-lg-0 me-lg-5">
+              <div class="page-block">
+                <p class="fs-1 fw-bold">&ldquo;Crushed ants.&rdquo;</p>
+                <p>
+                  That's what I said when someone asked me what I could taste
+                  in a glass of wine.
+                </p>
+                <p>
+                  For my 21st birthday my father gave me 21 bottles of
+                  Penfolds Grange Hermitage, vintages running from the
+                  mid-1970s to the mid-1990s. I sold them to buy art
+                  supplies.
+                </p>
+                <p>
+                  An old nose injury left me with very little sense of
+                  smell. The elaborate vocabulary of wine tasting&mdash;
+                  blackcurrants, leather, tobacco, forest floor&mdash;doesn't
+                  mean much when you can't reliably smell any of it.
+                </p>
+                <p>
+                  But I can still experience sweetness, acidity,
+                  astringency, body, alcohol warmth and finish. I wanted to
+                  learn to recognise those sensations more reliably, so I
+                  built Anosmia.
+                </p>
+
+                <h3 class="page-block-title">Start with what you can feel</h3>
+                <p>
+                  Most wine-tasting tools ask what you recognise. Anosmia
+                  starts with what you can actually perceive: sweetness,
+                  acidity, tannin, body, alcohol warmth and finish&mdash;six
+                  sensory dimensions, each with contextual guidance and a
+                  simple way to respond.
+                </p>
+                <p>
+                  &ldquo;Not noticed&rdquo; and &ldquo;Can't tell&rdquo; are
+                  valid answers. There's no need to invent a convincing
+                  tasting note.
+                </p>
+
+                <h3 class="page-block-title">
+                  A glass in one hand, a phone in the other
+                </h3>
+                <p>
+                  I designed the recording flow for one-handed use. Controls
+                  stay anchored at the bottom of the screen, with the
+                  sensation overview and learning guidance in the space
+                  above. You can identify the wine and attach a photograph,
+                  but neither is required to record a tasting.
+                </p>
+
+                <h3 class="page-block-title">The Cellar Book</h3>
+                <p>
+                  Each completed tasting becomes a permanent observation.
+                  You can correct a wine's identity or photograph, but not
+                  retrospectively change its sensory responses, tasting
+                  note, enjoyment rating or date.
+                </p>
+                <p>
+                  Retasting creates a new record. The point is to see
+                  whether my perception changes over time, not to quietly
+                  rewrite my earlier answers.
+                </p>
+
+                <h3 class="page-block-title">Two glasses</h3>
+                <p>
+                  A guided A/B comparison asks which wine feels more acidic,
+                  fuller or warmer&mdash;or whether you can tell the
+                  difference at all. Blind comparisons keep identities
+                  hidden until the appropriate point.
+                </p>
+
+                <h3 class="page-block-title">Design, build, test</h3>
+                <p>
+                  I designed the identity, interaction flows and component
+                  system, then built Anosmia as an installable React and
+                  TypeScript PWA. It uses IndexedDB for local-first storage,
+                  supports camera capture and works offline. The interface
+                  has been tested across browsers and on a physical Android
+                  phone.
+                </p>
+                <p>
+                  AI-assisted tools were part of the design and development
+                  process, alongside hands-on product decisions, debugging,
+                  test review and device verification.
+                </p>
+                <p>
+                  I still can't reliably taste blackcurrants. But I want to
+                  find out what I <em>can</em> learn to recognise.
+                </p>
+
+                <h3 class="page-block-title">Walkthrough</h3>
+                <!-- Portrait video walkthrough (60-90s) to be embedded here once recorded. -->
+                <p class="text-muted">
+                  A short video walkthrough is on its way&mdash;check back
+                  soon.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-auto">
+              <div class="tech-details">
+                <p class="label">Tech</p>
+                <p class="text-muted">
+                  React, TypeScript, Vite,<br />
+                  IndexedDB, PWA, Figma,<br />
+                  UX / interaction design
+                </p>
+              </div>
+              <div class="link-details">
+                <p class="label">Links</p>
+                <p class="link">
+                  <a
+                    class="link-plus"
+                    href="https://anosmia.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >live app</a
+                  >
+                </p>
+                <p class="link">
+                  <a
+                    class="link-plus"
+                    href="https://anosmia.vercel.app/?demo"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >sample demo</a
+                  >
+                </p>
+                <p class="link">
+                  <a
+                    class="link-plus"
+                    href="https://github.com/markradomski/anosmia"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >github repo</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="page-block">
+            <div class="row">
+              <div class="col-12 col-md-4 mb-4 mb-md-0">
+                <img
+                  class="img-fluid rounded w-100"
+                  src="images/welcome.jpg"
+                  alt="Anosmia welcome screen, introducing wine beyond aroma"
+                />
+                <figcaption class="caption">Wine beyond aroma</figcaption>
+              </div>
+              <div class="col-12 col-md-4 mb-4 mb-md-0">
+                <img
+                  class="img-fluid rounded w-100"
+                  src="images/recording.jpg"
+                  alt="Recording a wine's six sensations with contextual guidance"
+                />
+                <figcaption class="caption">What can you feel?</figcaption>
+              </div>
+              <div class="col-12 col-md-4">
+                <img
+                  class="img-fluid rounded w-100"
+                  src="images/summary.jpg"
+                  alt="Tasting summary with sensory observations saved to the Cellar Book"
+                />
+                <figcaption class="caption">Your tasting, recorded</figcaption>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
