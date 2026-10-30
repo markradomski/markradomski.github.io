@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="WallSnap — scale-accurate artwork placement for FloorGen floor plans, with an SVG wall editor, MCP integration and a Three.js walkthrough, by Mark Radomski."
+    />
+    <title>WallSnap — Mark Radomski</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-logo link-plus h3" href="/">MR</a>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <p class="link">
+                <a class="link-plus" href="/about.html">About</a>
+              </p>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main role="main" class="container">
+      <div class="row flex-column">
+        <div class="page-header">
+          <h1 class="page-title">WallSnap</h1>
+          <h2 class="page-subtitle">
+            Artwork placement for FloorGen / React, TypeScript, Three.js
+          </h2>
+        </div>
+
+        <div class="page-content">
+          <div class="row">
+            <div class="col mb-4 mb-lg-0 me-lg-5">
+              <div class="page-block">
+                <p class="fs-1 fw-bold">Hang it once.</p>
+                <h3 class="page-block-title">The problem</h3>
+                <p>
+                  A 165&nbsp;cm painting is hard to place by eye. Get it wrong
+                  and you find out with a drill in your hand: too close to a
+                  door, off-centre over the sofa, or simply too big for the
+                  wall.
+                </p>
+                <p>
+                  FloorGen already holds an accurate model of the house: every
+                  wall, door, window and piece of furniture, to the
+                  centimetre. WallSnap uses that model to place artwork
+                  precisely before anything goes on the wall.
+                </p>
+
+                <h3 class="page-block-title">The solution</h3>
+                <p>
+                  WallSnap loads a real wall from a FloorGen project, lets you
+                  position one or more paintings on it to scale, writes the
+                  placement back to FloorGen, and shows the result in the
+                  furnished room&mdash;from above, or at eye level.
+                </p>
+
+                <video
+                  controls
+                  playsinline
+                  preload="metadata"
+                  poster="./media/wallsnap-demo-poster.jpg"
+                  class="rounded"
+                  style="width: 100%"
+                >
+                  <source src="./media/wallsnap-demo.mp4" type="video/mp4" />
+                  Sorry, your browser doesn't support embedded videos.
+                </video>
+                <p class="caption">
+                  30-second demo: FloorGen's own 3D view, the same room in
+                  WallSnap, 2D editing and a walkthrough. Recorded read-only;
+                  nothing was saved to FloorGen.
+                </p>
+
+                <h3 class="page-block-title">A wall elevation, to scale</h3>
+                <p>
+                  Pick a floor and a wall and WallSnap draws its elevation from
+                  FloorGen's own wall endpoints, height and openings. Drag a
+                  painting, resize it with its handles, nudge it with the arrow
+                  keys, or type exact centimetres. Every position is measured
+                  from the wall's end and the floor, whichever way the wall
+                  runs.
+                </p>
+                <p>
+                  Paintings must fit the wall and stay clear of doors and
+                  windows. Problems are hatched on the drawing and explained in
+                  words, and nothing can be saved until they are fixed.
+                </p>
+                <figure class="my-4">
+                  <img
+                    class="img-fluid rounded w-100"
+                    src="images/wallsnap-2d-north-wall-editor.webp"
+                    alt="WallSnap's 2D editor: a 700 cm wall with two paintings, one selected with its resize handles"
+                  />
+                  <figcaption class="caption">
+                    The living room's 700&nbsp;cm north wall
+                  </figcaption>
+                </figure>
+
+                <h3 class="page-block-title">Walk the room</h3>
+                <p>
+                  The 3D view loads FloorGen's own export of the house and
+                  hangs every saved painting in it with its real image. Orbit
+                  around the floor, or switch to Walk for an eye-level view that
+                  collides with FloorGen's walls and furniture.
+                </p>
+                <figure class="my-4">
+                  <img
+                    class="img-fluid rounded w-100"
+                    src="images/wallsnap-walk-mode-eye-level.webp"
+                    alt="WallSnap Walk mode: an eye-level view of two paintings above the sofa"
+                  />
+                  <figcaption class="caption">Walk mode, at eye level</figcaption>
+                </figure>
+
+                <h3 class="page-block-title">FloorGen integration</h3>
+                <p>
+                  A small Node adapter talks to FloorGen's MCP server; the
+                  browser never sees the API key. It reads walls, openings,
+                  rooms and furniture, then saves each painting with
+                  <code>place_on_wall</code> and <code>update_items</code>.
+                  Every save is checked against the project's revision first and
+                  read back afterwards, and only counts once FloorGen confirms
+                  it.
+                </p>
+                <p>
+                  FloorGen stores each painting's size, wall, position and
+                  height. The painting's image stays in the browser: FloorGen
+                  has no image field for items, so its own viewer shows a plain
+                  picture object where WallSnap shows the painting.
+                </p>
+                <p>
+                  Writes are locked to a development copy of the project,
+                  checked on every call before it leaves the server.
+                </p>
+
+                <h3 class="page-block-title">Technical highlights</h3>
+                <ul>
+                  <li>
+                    Wall, screen and plan coordinates kept apart in pure,
+                    tested TypeScript functions
+                  </li>
+                  <li>
+                    SVG dragging through coordinate transforms, so it stays
+                    accurate at any zoom
+                  </li>
+                  <li>
+                    Several paintings per wall, saved one at a time with
+                    verified read-back
+                  </li>
+                  <li>
+                    Lazy-loaded Three.js preview built from the same wall data
+                    as the save
+                  </li>
+                  <li>
+                    Walk collision from FloorGen's plan: walls, doorways,
+                    furniture footprints and stairs
+                  </li>
+                  <li>
+                    All MCP results validated at the boundary; 369 unit tests
+                    plus Playwright browser tests
+                  </li>
+                </ul>
+                <p>
+                  AI-assisted tools were part of the development process,
+                  alongside hands-on product decisions, debugging, test review
+                  and verification against the live FloorGen project.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-auto">
+              <div class="tech-details">
+                <p class="label">Tech</p>
+                <p class="text-muted">
+                  React, TypeScript, Vite,<br />
+                  SVG, Three.js, Node,<br />
+                  MCP, Vitest, Playwright
+                </p>
+              </div>
+              <div class="link-details">
+                <p class="label">Links</p>
+                <p class="link">
+                  <a
+                    class="link-plus"
+                    href="https://github.com/markradomski/wallsnap"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >github repo</a
+                  >
+                </p>
+                <p class="link">
+                  <a
+                    class="link-plus"
+                    href="https://floorgen.app/docs/mcp"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >floorgen mcp</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="page-block">
+            <figure class="m-0">
+              <img
+                class="img-fluid rounded w-100"
+                src="images/wallsnap-3d-living-room-hero.webp"
+                alt="WallSnap's 3D preview: the furnished living room with two paintings above the sofa"
+              />
+              <figcaption class="caption">
+                The finished living room in WallSnap's 3D preview
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
