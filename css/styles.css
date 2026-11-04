@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Inter:wght@400;600&display=swap");
 
 /* ============================================================================
    COLOR PALETTE
@@ -261,9 +261,27 @@ a.link-plus.navbar-logo:before {
    COMPONENTS - ART GALLERY
    ============================================================================ */
 .art-gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 3rem 2.5rem;
+  --art-gap: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: var(--art-gap);
+}
+
+.art-column {
+  display: flex;
+  flex-direction: column;
+  gap: var(--art-gap);
+  min-width: 0;
+}
+
+@media (min-width: 768px) {
+  .art-gallery {
+    flex-direction: row;
+  }
+
+  .art-column {
+    flex: 1 1 0;
+  }
 }
 
 .art-item {
@@ -284,18 +302,22 @@ a.link-plus.navbar-logo:before {
 
 .art-item figcaption {
   margin-top: 0.75rem;
+  text-align: left;
 }
 
 .art-title {
-  margin-bottom: 0.15rem;
-  font-family: "PT Serif", serif;
-  font-size: 1.1rem;
+  margin-bottom: 0rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
   color: var(--color-text-heading);
 }
 
 .art-meta {
   margin-bottom: 0;
-  font-size: 0.85rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 0.9rem;
   color: var(--color-text-secondary);
 }
 
@@ -313,35 +335,41 @@ a.link-plus.navbar-logo:before {
   color: var(--color-text-primary);
 }
 
+/* Extra side padding on desktop gives the prev/next controls room to sit beside the image instead of over it. */
+@media (min-width: 768px) {
+  .art-viewer {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
 .art-viewer::backdrop {
   background: rgba(43, 38, 32, 0.8);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .art-viewer {
-    transition:
-      opacity 0.2s ease,
-      display 0.2s allow-discrete,
-      overlay 0.2s allow-discrete;
-  }
+/* Shrink-wraps to the image so prev/next (positioned against this, not the dialog) land beside and centred on it. */
+.art-viewer-stage {
+  position: relative;
+  width: fit-content;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
-.art-viewer img {
+.art-viewer-stage img {
   display: block;
   max-width: 100%;
   max-height: 70vh;
-  margin: 0 auto;
   border-radius: 0.25rem;
 }
 
 .art-viewer figcaption {
-  margin-top: 1rem;
+  margin-top: 1.25rem;
   text-align: center;
 }
 
 .art-viewer-title {
   margin-bottom: 0.15rem;
-  font-family: "PT Serif", serif;
+  font-family: "Inter", sans-serif;
   font-size: 1.1rem;
   color: var(--color-text-heading);
 }
@@ -352,19 +380,79 @@ a.link-plus.navbar-logo:before {
   color: var(--color-text-secondary);
 }
 
-.art-viewer-close {
-  position: absolute;
-  top: 0.5rem;
-  right: 0.75rem;
-  background: none;
+.art-viewer-close,
+.art-viewer-prev,
+.art-viewer-next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
   border: none;
-  font-size: 1.75rem;
-  line-height: 1;
+  border-radius: 50%;
+  z-index: 1;
   color: var(--color-text-secondary);
   cursor: pointer;
 }
 
 .art-viewer-close:hover,
-.art-viewer-close:focus-visible {
+.art-viewer-close:focus-visible,
+.art-viewer-prev:hover,
+.art-viewer-prev:focus-visible,
+.art-viewer-next:hover,
+.art-viewer-next:focus-visible {
+  background: var(--color-accent-light);
   color: var(--color-text-primary);
+}
+
+.art-viewer-close:focus-visible,
+.art-viewer-prev:focus-visible,
+.art-viewer-next:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 1px;
+}
+
+/* left/top are set per-open by JS to the midpoint of the image's and dialog's top-right corners. */
+.art-viewer-close {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  background: rgba(249, 246, 242, 0.85);
+}
+
+/* Overlaid on the image edges on mobile, where there's no side padding to sit in. */
+.art-viewer-prev,
+.art-viewer-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(249, 246, 242, 0.85);
+}
+
+.art-viewer-prev {
+  left: 0.5rem;
+}
+
+.art-viewer-next {
+  right: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .art-viewer-prev,
+  .art-viewer-next {
+    background: transparent;
+  }
+
+  .art-viewer-prev {
+    left: -3.5rem;
+  }
+
+  .art-viewer-next {
+    right: -3.5rem;
+  }
+}
+
+.art-viewer-prev:disabled,
+.art-viewer-next:disabled {
+  visibility: hidden;
 }

@@ -15,45 +15,50 @@ favicon: true
     <main class="container">
       <div class="row flex-column">
         <div class="page-header">
-          <h1 class="page-title">Art</h1>
+       <!--   <h1 class="page-title">Art</h1>
           <h2 class="page-subtitle">
             Selected paintings, drawings, sculpture and experimental work.
-          </h2>
+          </h2> -->
         </div>
 
         <div class="page-content">
           <div class="art-gallery" id="art-gallery">
-            <!--
-              Add artwork here. Drop image files in images/art/ (see
-              images/art/README.md), then copy this block for each piece:
-
-              <figure class="art-item">
-                <a
-                  class="art-link"
-                  href="images/art/example.jpg"
-                  data-title="Untitled"
-                  data-meta="Oil on canvas, 60 &times; 80cm, 2024"
-                >
-                  <img
-                    src="images/art/example.jpg"
-                    alt="Describe the artwork for screen readers"
-                    loading="lazy"
-                  />
-                </a>
-                <figcaption>
-                  <p class="art-title">Untitled</p>
-                  <p class="art-meta">Oil on canvas, 60 &times; 80cm, 2024</p>
-                </figcaption>
-              </figure>
-
-              Remove the empty-state paragraph below once at least one
-              piece is added.
-            -->
+            {% for item in artwork %}
+            <figure
+              class="art-item"
+              data-aspect="{{ item.width }}/{{ item.height }}"
+            >
+              <a
+                class="art-link"
+                href="{{ item.src }}"
+                data-index="{{ item.index }}"
+                data-title="{{ item.title }}"
+                data-meta="{{ item.metaLine }}"
+              >
+                <img
+                  src="{{ item.src }}"
+                  alt="{{ item.alt }}"
+                  width="{{ item.width }}"
+                  height="{{ item.height }}"
+                  style="aspect-ratio: {{ item.width }} / {{ item.height }}"
+                  loading="lazy"
+                />
+              </a>
+              <figcaption>
+                <p class="art-title">{{ item.title }}</p>
+                {% if item.metaLine %}
+                <p class="art-meta">{{ item.metaLine }}</p>
+                {% endif %}
+              </figcaption>
+            </figure>
+            {% endfor %}
           </div>
+          {% if artwork.length == 0 %}
           <p class="art-empty-state" id="art-empty-state">
             Artwork is on its way&mdash;this gallery is wired up and ready
             for images.
           </p>
+          {% endif %}
         </div>
       </div>
     </main>
@@ -61,14 +66,68 @@ favicon: true
 
     <dialog class="art-viewer" id="art-viewer" aria-label="Artwork viewer">
       <button type="button" class="art-viewer-close" aria-label="Close">
-        &times;
+        <svg
+          viewBox="0 0 24 24"
+          width="20"
+          height="20"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+        </svg>
       </button>
-      <img src="" alt="" />
+      <div class="art-viewer-stage">
+        <button
+          type="button"
+          class="art-viewer-prev"
+          aria-label="Previous artwork"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            width="20"
+            height="20"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <polyline points="15 6 9 12 15 18"></polyline>
+          </svg>
+        </button>
+        <img src="" alt="" />
+        <button
+          type="button"
+          class="art-viewer-next"
+          aria-label="Next artwork"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            width="20"
+            height="20"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <polyline points="9 6 15 12 9 18"></polyline>
+          </svg>
+        </button>
+      </div>
       <figcaption>
         <p class="art-viewer-title"></p>
         <p class="art-viewer-meta"></p>
       </figcaption>
     </dialog>
 
+    <script src="js/art-layout.js"></script>
     <script src="js/art-gallery.js"></script>
   
