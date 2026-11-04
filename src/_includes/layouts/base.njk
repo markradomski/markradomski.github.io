@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+{%- if author %}
+    <meta name="author" content="{{ author }}" />
+{%- endif %}
+    <meta name="description" content="{{ description }}" />
+{%- if ogTitle %}
+    <meta property="og:title" content="{{ ogTitle }}" />
+{%- endif %}
+{%- if ogDescription %}
+    <meta property="og:description" content="{{ ogDescription }}" />
+{%- endif %}
+{%- if ogImage %}
+    <meta property="og:image" content="{{ ogImage }}" />
+{%- endif %}
+{%- if ogUrl %}
+    <meta property="og:url" content="{{ ogUrl }}" />
+{%- endif %}
+{%- if ogType %}
+    <meta property="og:type" content="{{ ogType }}" />
+{%- endif %}
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/styles.css{{ cssSuffix or "" }}" />
+{%- if favicon %}
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+{%- endif %}
+{%- if canonical %}
+    <link rel="canonical" href="{{ canonical }}" />
+{%- endif %}
+  </head>
+
+  <body>
+    <header>
+{% include "nav.njk" %}
+    </header>
+
+{{ content | safe }}
+  </body>
+</html>

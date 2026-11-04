@@ -1,0 +1,13 @@
+{
+  "name": "markradomski.github.io",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Developer portfolio, built with Eleventy",
+  "scripts": {
+    "build": "rm -rf _site && eleventy",
+    "serve": "rm -rf _site && eleventy --serve"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}

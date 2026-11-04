@@ -1,0 +1,109 @@
+---
+layout: "layouts/base.njk"
+title: "Mark Radomski"
+description: "Pollywaffle — a reusable React + TypeScript + D3 data visualisation engine, applied to Australian federal politicians' 2025 property declarations."
+nav: "projects"
+cssSuffix: "?v=embed-fix-1"
+---
+
+    <main role="main" class="container">
+      <div class="row flex-column">
+        <div class="page-header">
+          <h1 class="page-title">Smashed Avo Property Price Index</h1>
+          <h2 class="page-subtitle">Pollywaffle data viz engine</h2>
+        </div>
+
+        <div class="page-content">
+          <div class="row">
+            <div class="col mb-4 mb-lg-0 me-lg-5">
+              <div class="page-block">
+                <p>
+                  Pollywaffle visualises Australian federal politicians' 2025
+                  property declarations through the foolproof logic that smashed
+                  avo on toast is what's standing between young (and not so)
+                  Australians and home ownership.
+                </p>
+                <p>
+                  This visualisation has mapped out how many years of breakfasts
+                  you would have to give up to afford the same number of
+                  properties as various Politicians - based on a median house
+                  price of $848,858 AUD and eating $22 avo on toast
+                  EVERY.SINGLE.DAY.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-auto">
+              <div class="tech-details">
+                <p class="label">Tech</p>
+                <p class="text-muted">
+                  React, TypeScript, D3,<br />
+                  SVG, Vite, Zod, Vitest, React Testing Library
+                </p>
+              </div>
+
+              <div class="link-details">
+                <p class="label">Links</p>
+
+                <p class="link">
+                  <a
+                    href="https://github.com/markradomski/pollywaffle-public"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="link-plus"
+                  >
+                    github repo
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="page-block mt-5">
+            <div class="pollywaffle-embed">
+              <iframe
+                id="pollywaffle-iframe"
+                src="/app/data-viz/pollywaffle/?embed=1&v=resize-postmessage-1"
+                title="Pollywaffle — live interactive demo"
+                scrolling="no"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script>
+      (function () {
+        var iframe = document.getElementById("pollywaffle-iframe");
+
+        // Primary path: the embedded app measures its own rendered height
+        // (fonts, filters, layout settling — all internal to it) and
+        // reports it via postMessage. Same-document reads of the iframe's
+        // scrollHeight can't be trusted for that — the height depends on
+        // state this page has no visibility into.
+        window.addEventListener("message", function (event) {
+          if (event.origin !== window.location.origin) return;
+          if (event.source !== iframe.contentWindow) return;
+          var data = event.data;
+          if (!data || data.type !== "pollywaffle:resize") return;
+          var height = data.height;
+          if (typeof height !== "number" || !isFinite(height) || height <= 0) return;
+          iframe.style.height = Math.ceil(height) + "px";
+        });
+
+        // Fallback for an older build that doesn't post a resize message
+        // yet: one same-document measurement on load. Never retried on a
+        // timer or observer — the CSS min-height covers the gap until
+        // either this or the real postMessage report lands.
+        iframe.addEventListener("load", function () {
+          try {
+            var doc = iframe.contentWindow.document;
+            var height = Math.max(doc.documentElement.scrollHeight, doc.body.scrollHeight);
+            iframe.style.height = height + "px";
+          } catch (e) {
+            // cross-origin fallback: leave the CSS min-height in place
+          }
+        });
+      })();
+    </script>
+  

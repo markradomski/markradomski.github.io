@@ -256,3 +256,115 @@ a.link-plus.navbar-logo:before {
   min-height: 1100px;
   border: 0;
 }
+
+/* ============================================================================
+   COMPONENTS - ART GALLERY
+   ============================================================================ */
+.art-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 3rem 2.5rem;
+}
+
+.art-item {
+  margin: 0;
+}
+
+.art-link {
+  display: block;
+  border-bottom: none;
+}
+
+.art-link img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.25rem;
+}
+
+.art-item figcaption {
+  margin-top: 0.75rem;
+}
+
+.art-title {
+  margin-bottom: 0.15rem;
+  font-family: "PT Serif", serif;
+  font-size: 1.1rem;
+  color: var(--color-text-heading);
+}
+
+.art-meta {
+  margin-bottom: 0;
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+}
+
+.art-empty-state {
+  color: var(--color-text-secondary);
+}
+
+.art-viewer {
+  max-width: min(90vw, 1100px);
+  max-height: 90vh;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  background: var(--color-bg-card);
+  color: var(--color-text-primary);
+}
+
+.art-viewer::backdrop {
+  background: rgba(43, 38, 32, 0.8);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .art-viewer {
+    transition:
+      opacity 0.2s ease,
+      display 0.2s allow-discrete,
+      overlay 0.2s allow-discrete;
+  }
+}
+
+.art-viewer img {
+  display: block;
+  max-width: 100%;
+  max-height: 70vh;
+  margin: 0 auto;
+  border-radius: 0.25rem;
+}
+
+.art-viewer figcaption {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.art-viewer-title {
+  margin-bottom: 0.15rem;
+  font-family: "PT Serif", serif;
+  font-size: 1.1rem;
+  color: var(--color-text-heading);
+}
+
+.art-viewer-meta {
+  margin-bottom: 0;
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+}
+
+.art-viewer-close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.75rem;
+  background: none;
+  border: none;
+  font-size: 1.75rem;
+  line-height: 1;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+}
+
+.art-viewer-close:hover,
+.art-viewer-close:focus-visible {
+  color: var(--color-text-primary);
+}

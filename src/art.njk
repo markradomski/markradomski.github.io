@@ -1,0 +1,74 @@
+---
+layout: "layouts/base.njk"
+permalink: "/art.html"
+title: "Art — Mark Radomski"
+description: "Selected paintings, drawings, sculpture and experimental work by Mark Radomski."
+nav: "art"
+ogTitle: "Art — Mark Radomski"
+ogDescription: "Selected paintings, drawings, sculpture and experimental work by Mark Radomski."
+ogUrl: "https://markradomski.github.io/art.html"
+ogType: "website"
+canonical: "https://markradomski.github.io/art.html"
+favicon: true
+---
+
+    <main class="container">
+      <div class="row flex-column">
+        <div class="page-header">
+          <h1 class="page-title">Art</h1>
+          <h2 class="page-subtitle">
+            Selected paintings, drawings, sculpture and experimental work.
+          </h2>
+        </div>
+
+        <div class="page-content">
+          <div class="art-gallery" id="art-gallery">
+            <!--
+              Add artwork here. Drop image files in images/art/ (see
+              images/art/README.md), then copy this block for each piece:
+
+              <figure class="art-item">
+                <a
+                  class="art-link"
+                  href="images/art/example.jpg"
+                  data-title="Untitled"
+                  data-meta="Oil on canvas, 60 &times; 80cm, 2024"
+                >
+                  <img
+                    src="images/art/example.jpg"
+                    alt="Describe the artwork for screen readers"
+                    loading="lazy"
+                  />
+                </a>
+                <figcaption>
+                  <p class="art-title">Untitled</p>
+                  <p class="art-meta">Oil on canvas, 60 &times; 80cm, 2024</p>
+                </figcaption>
+              </figure>
+
+              Remove the empty-state paragraph below once at least one
+              piece is added.
+            -->
+          </div>
+          <p class="art-empty-state" id="art-empty-state">
+            Artwork is on its way&mdash;this gallery is wired up and ready
+            for images.
+          </p>
+        </div>
+      </div>
+    </main>
+    <!-- content container -->
+
+    <dialog class="art-viewer" id="art-viewer" aria-label="Artwork viewer">
+      <button type="button" class="art-viewer-close" aria-label="Close">
+        &times;
+      </button>
+      <img src="" alt="" />
+      <figcaption>
+        <p class="art-viewer-title"></p>
+        <p class="art-viewer-meta"></p>
+      </figcaption>
+    </dialog>
+
+    <script src="js/art-gallery.js"></script>
+  
