@@ -29,12 +29,20 @@
       heights.push(0);
     }
 
+    // An incomplete final row (items.length % columnCount) is placed from the
+    // leftmost column instead of via shortest-column, so it doesn't land wherever
+    // happens to be shortest at that point.
+    var tailCount = items.length > columnCount ? items.length % columnCount : 0;
+    var mainCount = items.length - tailCount;
+
     items.forEach(function (item, index) {
       var target;
       if (index < columnCount) {
         target = index;
-      } else {
+      } else if (index < mainCount) {
         target = heights.indexOf(Math.min.apply(null, heights));
+      } else {
+        target = index - mainCount;
       }
       columns[target].appendChild(item);
       heights[target] += heightUnit(item);
