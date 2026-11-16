@@ -298,6 +298,8 @@ a.link-plus.navbar-logo:before {
   width: 100%;
   height: auto;
   border-radius: 0.25rem;
+  /* Shows through the reserved aspect-ratio box until the image paints */
+  background-color: #e3e1dd;
 }
 
 .art-item figcaption {
